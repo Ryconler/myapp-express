@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    /*height: 100%;*/
+    background: #606060;
+    margin: auto;
+    position: relative;
+}
+
+.plane {
+    width: 50px;
+    height: 50px;
+    background: #8392ff;
+    left: 0%;
+    /*top: 90%;*/
+    position: relative;
+
+}
+
+.shoot {
+    width: 50px;
+    height: 50px;
+    background: #ff492e;
+    left: 0%;
+    top: 50%;
+    position: relative;
+
+}
+
+.bullet {
+
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #8392ff;
+}
