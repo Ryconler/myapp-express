@@ -11,7 +11,7 @@ var gamesRouter=require("./routes/games")
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'public/views'));   //设置视图的目录
+app.set('views', path.join(__dirname, 'public'));   //设置视图的目录
 app.engine('html', require('ejs').renderFile);  //使用ejs引擎渲染html文件
 app.set('view engine', 'html');
 

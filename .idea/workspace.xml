@@ -2,8 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/javascripts/indexScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/jquery-2.1.4.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/blank.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/blank.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/developing.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/developing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/dojo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/dojo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/flash.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/flash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fork.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fork.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/apple-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/apple-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/apple-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/apple-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/apple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/banana-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/banana-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/banana-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/banana-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/banana.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/banana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/basaha-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/basaha-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/basaha-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/basaha-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/basaha.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/basaha.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/boom.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/boom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/peach-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/peach-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/peach-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/peach-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/peach.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/peach.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/sandia-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/sandia-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/sandia-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/sandia-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/fruit/sandia.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/fruit/sandia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/game-over.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/game-over.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/home-desc.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/home-desc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/home-mask.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/home-mask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/lose.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/lose.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/new-game.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/new-game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/new.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/ninja.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/ninja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/quit.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/quit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/score.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/score.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/smoke.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/smoke.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/xf.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/xf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/xx.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/xx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/xxf.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/xxf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/xxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/xxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/images/xxxf.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/images/xxxf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/scripts/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/scripts/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/boom.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/boom.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/boom.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/boom.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/menu.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/menu.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/menu.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/menu.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/over.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/over.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/over.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/over.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/splatter.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/splatter.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/splatter.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/splatter.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/start.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/start.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/start.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/start.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/throw.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/throw.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/fruit/sound/throw.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/sound/throw.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/plane/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/plane/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/plane/jquery-2.1.4/jquery-2.1.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/jquery-2.1.4/jquery-2.1.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/games/plane/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,28 +80,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/index.html">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/views/error.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="-40">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="160">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/indexScript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -66,7 +140,6 @@
       <list>
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/views/games/html5-fruit-ninja/index.html" />
         <option value="$PROJECT_DIR$/public/views/js.js" />
         <option value="$PROJECT_DIR$/public/views/games/plane/css.css" />
@@ -77,9 +150,13 @@
         <option value="$PROJECT_DIR$/public/views/games/index.html" />
         <option value="$PROJECT_DIR$/public/views/games/plane/index.html" />
         <option value="$PROJECT_DIR$/public/views/index.html" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/javascripts/test.js" />
         <option value="$PROJECT_DIR$/public/views/error.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/games/index.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/indexScript.js" />
       </list>
     </option>
   </component>
@@ -111,7 +188,12 @@
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -125,7 +207,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545279911360" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545291068691" />
     <property name="last_opened_file_path" value="C:/Program Files/Program/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -133,13 +215,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views\games\plane\jquery-2.1.4" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\javascripts" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views\games" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\scripts" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public" />
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views" />
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views\games\plane\jquery-2.1.4" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -154,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.test.js">
+  <component name="RunManager" selected="Node.js.www">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -166,8 +251,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.www" />
+        <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
@@ -187,12 +272,20 @@
       <workItem from="1545223985442" duration="2083000" />
       <workItem from="1545272438511" duration="1062000" />
       <workItem from="1545278318618" duration="1080000" />
-      <workItem from="1545279733203" duration="241000" />
+      <workItem from="1545279733203" duration="8651000" />
     </task>
+    <task id="LOCAL-00001" summary="v1.0">
+      <created>1545279999010</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545279999010</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15058000" />
+    <option name="totallyTimeSpent" value="23468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -205,8 +298,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -216,13 +310,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2831424" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28196722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.39934534" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -239,6 +333,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -300,29 +404,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/all.js" />
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/games/html5-fruit-ninja/index.html" />
     <entry file="file://$PROJECT_DIR$/public/views/js.js" />
     <entry file="file://$PROJECT_DIR$/public/views/games/plane/style.css" />
     <entry file="file://$PROJECT_DIR$/public/views/games/plane/css.css" />
     <entry file="file://$PROJECT_DIR$/public/views/games/plane/js.js" />
-    <entry file="file://$PROJECT_DIR$/public/views/games/plane/css/style.css">
+    <entry file="file://$PROJECT_DIR$/public/games/plane/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-132">
           <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/games/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -333,14 +423,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/games/plane/index.html">
+    <entry file="file://$PROJECT_DIR$/public/games/plane/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/games/plane/js/script.js">
+    <entry file="file://$PROJECT_DIR$/public/games/plane/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="13" selection-end-column="29" />
@@ -349,13 +439,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/test.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -371,24 +454,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state relative-caret-position="-40">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/index.html">
+    <entry file="file://$PROJECT_DIR$/public/games/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="220">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/error.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-2.1.4.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/indexScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>

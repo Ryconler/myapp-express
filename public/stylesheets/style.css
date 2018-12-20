@@ -1,19 +1,72 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  margin: 0;
 }
-ul {
-  padding: 0
-}
-li{
-  list-style-type: none;
-  float: left;
-  margin:0 10px;
-}
-a {
-  border: 3px dotted #ff492e;
-  padding: 10px;
-  color: #00B7FF;
+a{
+  color: #666;
   text-decoration: none;
 }
+a:visited{
+  color: #666;
+}
+/* header */
+header{
+  background: #F9F9f9;
+  border-bottom: 1px solid #DDD;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  height: 55px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+}
+.logo{
+  width: 150px;
+  height: 55px;
+  background: #ff492e;
+  float: left;
+  line-height: 55px;
+  text-align: center;
+}
+
+.head-ul {
+  margin: 0 10px;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+  height: 55px;
+}
+.head-ul li{
+  float: left;
+  margin: 0 5px;
+  height: 55px;
+  line-height: 55px;
+}
+.head-ul a{
+  display: block;
+  padding: 0 10px;
+}
+
+/* head-menu */
+.head-menu{
+  position: absolute;
+  width:100%;
+  top:55px;
+  display: inline-block;
+}
+.head-menu .menu1{
+  display: none;
+  position: absolute;
+  left: 180px;
+  width: 78px;
+  height: 50px;
+  background: red;
+}
+.head-menu .menu2{
+  display: none;
+  position: absolute;
+  left: 258px;
+  width: 62px;
+  height: 50px;
+  background: blue;
+}
+
 
