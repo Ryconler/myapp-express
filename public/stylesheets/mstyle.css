@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 1.5rem;
+    padding: 0 0 0 0.7rem;
+    /*background: #318fe1;*/
+
+}
+
+.header .logo {
+    position: absolute;
+    height: 1.2rem;
+    bottom: 0;
+
+}
+
+.navigation {
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    right: 1.5rem;
+
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;   /* 设置如何处理元素内的空白 */
+    display: inline-block;
+
+    height: 1.5rem;
+    /*background-color: #ff9389;*/
+    padding: 0 0 0 1rem;
+}
+.navigation a{
+    font-family: "Microsoft YaHei UI";
+    font-size: 0.6rem;
+    color: #666;
+    line-height: 1.5rem;
+    margin: 0 1rem 0 0;
+}
+
+.dropdown{
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #666;
+}
+.container {
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    left: 0.5rem;
+    right: 0.5rem;
+
+
+    background-image: url("../images/bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*.footer{*/
+/*position: absolute;*/
+/*bottom: 0;*/
+
+/*width: 100%;*/
+/*height: 50px;*/
+/*background-color: #ff493d;*/
+/*}*/
