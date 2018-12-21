@@ -4,6 +4,7 @@
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/mindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/mstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/mstyle.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,24 +33,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/mindex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="252">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#h1#1;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#4;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#5;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#998#1004#0" expanded="true" />
+                <element signature="e#1004#1010#0" expanded="true" />
+                <element signature="e#1010#1016#0" expanded="true" />
+                <element signature="e#1016#1022#0" expanded="true" />
+                <element signature="e#1031#1037#0" expanded="true" />
+                <element signature="e#1048#1054#0" expanded="true" />
+                <element signature="e#1100#1106#1" expanded="true" />
+                <element signature="e#1106#1112#0" expanded="true" />
+                <element signature="e#1112#1118#0" expanded="true" />
+                <element signature="e#1118#1124#0" expanded="true" />
+                <element signature="e#1124#1130#0" expanded="true" />
+                <element signature="e#1130#1136#0" expanded="true" />
+                <element signature="e#1132#1138#0" expanded="true" />
+                <element signature="e#1138#1144#0" expanded="true" />
+                <element signature="e#1156#1162#0" expanded="true" />
+                <element signature="e#1162#1168#0" expanded="true" />
+                <element signature="e#1174#1180#0" expanded="true" />
+                <element signature="e#1180#1186#0" expanded="true" />
+                <element signature="n#style#0;n#h2#4;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/mstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+            <state relative-caret-position="308">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -102,6 +124,7 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/mindex.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/mstyle.css" />
       </list>
     </option>
   </component>
@@ -165,7 +188,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545397099915" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545398623408" />
     <property name="last_opened_file_path" value="C:/Program Files/Program/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -231,7 +254,7 @@
       <workItem from="1545272438511" duration="1062000" />
       <workItem from="1545278318618" duration="1080000" />
       <workItem from="1545279733203" duration="14945000" />
-      <workItem from="1545374153517" duration="17912000" />
+      <workItem from="1545374153517" duration="19412000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -282,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545396883862</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v1.4">
+      <created>1545397125200</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545397125200</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47674000" />
+    <option name="totallyTimeSpent" value="49174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,21 +580,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/mstyle.css">
+    <entry file="file://$PROJECT_DIR$/public/mindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+        <state relative-caret-position="252">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#1;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#4;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#5;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#998#1004#0" expanded="true" />
+            <element signature="e#1004#1010#0" expanded="true" />
+            <element signature="e#1010#1016#0" expanded="true" />
+            <element signature="e#1016#1022#0" expanded="true" />
+            <element signature="e#1031#1037#0" expanded="true" />
+            <element signature="e#1048#1054#0" expanded="true" />
+            <element signature="e#1100#1106#1" expanded="true" />
+            <element signature="e#1106#1112#0" expanded="true" />
+            <element signature="e#1112#1118#0" expanded="true" />
+            <element signature="e#1118#1124#0" expanded="true" />
+            <element signature="e#1124#1130#0" expanded="true" />
+            <element signature="e#1130#1136#0" expanded="true" />
+            <element signature="e#1132#1138#0" expanded="true" />
+            <element signature="e#1138#1144#0" expanded="true" />
+            <element signature="e#1156#1162#0" expanded="true" />
+            <element signature="e#1162#1168#0" expanded="true" />
+            <element signature="e#1174#1180#0" expanded="true" />
+            <element signature="e#1180#1186#0" expanded="true" />
+            <element signature="n#style#0;n#h2#4;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/mindex.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/mstyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
         </state>
       </provider>
     </entry>

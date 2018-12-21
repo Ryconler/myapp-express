@@ -18,10 +18,11 @@ main {
 .header {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
 
-    width: 100%;
     height: 1.5rem;
-    padding: 0 0 0 0.7rem;
+    padding: 0 0.7rem;
     /*background: #318fe1;*/
 
 }
@@ -32,7 +33,15 @@ main {
     bottom: 0;
 
 }
+.header div{
+    position: relative;
+    line-height: 2rem;
+    font-size: 0.6rem;
+    font-family:"Microsoft Sans Serif";
+    color: #ff90b6;
+    float: right;
 
+}
 .navigation {
     position: absolute;
     top: 1.5rem;
@@ -81,6 +90,8 @@ main {
     background-repeat: no-repeat;
     overflow-x: hidden;
     overflow-y: auto;
+
+    color: #666;
 }
 
 /*.footer{*/
