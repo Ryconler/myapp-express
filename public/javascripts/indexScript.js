@@ -1,15 +1,8 @@
-// $(function () {
-//     $("#game").on("mouseover",function () {
-//         $(".menu1").css("display","block")
-//     })
-//
-//     $(".menu1").on("mouseover",function () {
-//         $(".menu1").css("display","block")
-//     })
-//     $("#game").on("mouseleave",function () {
-//         $(".menu1").css("display","none")
-//     })
-//     $(".menu1").on("mouseleave",function () {
-//         $(".menu1").css("display","none")
-//     })
-// })
+function calc() {
+    var html=document.documentElement
+    width=html.clientWidth>640?640:html.clientWidth
+    html.style.fontSize=20*(width/320)+"px"
+    // console.log(html.style.fontSize)
+}
+window.addEventListener("resize",calc)
+calc()

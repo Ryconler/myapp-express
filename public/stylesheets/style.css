@@ -31,6 +31,7 @@ header{
 
 /* 小游戏下拉菜单 */
 .games{
+  width: 84px;
   float: left;
   margin: 0 5px;
   text-align: center;  /* 菜单中所有字都水平居中 */
@@ -39,7 +40,7 @@ header{
   line-height: 55px;
 }  /* 主菜单 */
 .games-down{
-  visibility: hidden;  /* 默认不可见 */
+  display: none;  /* 默认不可见 */
   background-color: #F9F9f9;
   box-shadow: 0 3px 5px 3px rgba(0,0,0,0.2);
 }  /* 子菜单 */
@@ -51,10 +52,11 @@ header{
   background: #e0e0e0;
 }  /* 鼠标放在下拉菜单内容时 */
 .games:hover .games-down{
-  visibility: visible;
+  display: block;
 }  /* 鼠标放在整个菜单时 */
 
 .live{
+  width: 72px;
   float: left;
   margin: 0 5px;
   text-align: center;
@@ -64,7 +66,7 @@ header{
   line-height: 55px;
 }
 .live-down{
-  visibility: hidden;
+  display: none;
   background-color: #F9F9f9;
   box-shadow: 0 3px 5px 3px rgba(0,0,0,0.2);
 }
@@ -76,7 +78,7 @@ header{
   background: #e0e0e0;
 }
 .live:hover .live-down{
-  visibility: visible;
+  display: block;
 }
 
 
