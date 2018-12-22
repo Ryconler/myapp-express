@@ -93,7 +93,13 @@ main {
 
     color: #666;
 }
+/*.container h2{*/
+    /*width: 3rem;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
 
+/*}*/
 /*.footer{*/
 /*position: absolute;*/
 /*bottom: 0;*/
