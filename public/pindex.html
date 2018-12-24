@@ -2,69 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>pindex</title>
+    <title>testindex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
     <script src="jquery-2.1.4/jquery-2.1.4.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/pindex.css"/>
+    <script src="javascripts/pindex.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">首页</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+<header>
+    <div class="header_wrap">
+        <a href="#">
+            <div class="logo"></div>
+        </a>
+        <ul>
+            <li class="video"><a>视频</a>
+                <div class="dropdown">
+                    <a href="#">哔哩哔哩</a>
+                    <a href="#">腾讯视频</a>
+                    <a href="#">优酷视频</a>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
+            </li>
+            <li><a>直播</a>
+                <div class="dropdown">
+                    <a href="#">斗鱼TV</a>
+                    <a href="#">虎牙TV</a>
+                </div>
+            </li>
+            <li><a>南通大学</a>
+                <div class="dropdown">
+                    <a href="#">南通大学官网</a>
+                    <a href="#">ehall</a>
+                </div>
+            </li>
+            <li><a>我写的小游戏</a>
+                <div class="dropdown">
+                    <a href="#">打飞机</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="main_wrap">
+        <div class="banner">
+            <ul class="imgs">
+                <li><a href="#"><img src="images/banner1.jpg"></a></li>
+                <li><a href="#"><img src="images/banner2.jpg">></a></li>
+                <li><a href="#"><img src="images/banner3.jpg"></a></li>
+                <li><a href="#"><img src="images/banner4.jpg"></a></li>
+            </ul>
+            <ul class="dot"></ul>
+            <div class="button btn_l">&lt;</div>
+            <div class="button btn_r">&gt;</div>
+        </div>
+        <div class="title">
+            <div class="title_name">通大要闻</div>
+            <div class="title_more"><a href="#">更多&gt;&gt;</a></div>
+            <div class="title_line"></div>
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/1.jpg"/>
+                        <h3>杏林学院微电子科学与工程专业接受省教育评估院综合评估</h3>
+                        <h4>2018-12-24</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/2.jpg"/>
+                        <h3>江苏长江经济带研究院入选“2018中国高校智库百强榜”</h3>
+                        <h4>2018-12-24</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/3.jpg"/>
+                        <h3>我校获“2050我心目中的交通强国”创意作品征集和展示活动优秀组织奖</h3>
+                        <h4>2018-12-24</h4>
+                    </a>
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<div class="container">
-    <div class="row">
-
+        </div>
+        <div class="title">
+            <div class="title_name">校园生活</div>
+            <div class="title_more"><a href="#">更多&gt;&gt;</a></div>
+            <div class="title_line"></div>
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/4.jpg"/>
+                        <h3>学工处举办学院心育特色活动交流评比会</h3>
+                        <h4>2018-12-24</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/5.jpg"/>
+                        <h3>我校第十二届运动会教职工篮球赛落幕</h3>
+                        <h4>2018-12-24</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/6.jpg"/>
+                        <h3>佛罗伦萨大学建筑学院副院长Francesco Armato一行访问艺术学院</h3>
+                        <h4>2018-12-24</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</main>
+<footer>
+    <div class="foot_wrap">
+        <p>Copyright © NanTong University 苏ICP备05007127号</p>
+    </div>
+</footer>
+
+
 </body>
 </html>

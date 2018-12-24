@@ -1356,7 +1356,7 @@ define("scripts/factory/fruit.js", function(exports){
 	
 		angle = ( ( angle % 180 ) + 360 + inf[4] ) % 360;
 	
-		this.bImage1 = create( "fruit", preSrc + "-1.png" );
+		this.bImage1 = create( "fruit", preSrc + "-1.jpg" );
 		this.bImage2 = create( "fruit", preSrc + "-2.png" );
 	
 		[ this.bImage1, this.bImage2 ].invoke( "rotate", angle );
