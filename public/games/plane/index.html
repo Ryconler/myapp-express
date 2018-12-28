@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 20px">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <!--<meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">-->
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no"/>
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <script src="jquery-2.1.4/jquery-2.1.4.min.js"></script>
-    <!--<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>-->
-
+    <script src="js/init.js"></script>
 
 </head>
 <body>
-<div class="container">
-    <div class="plane"></div>
-    <div class="shoot" >发射</div>
+<div class="container" id="container">
+    <div class="plane"><img src="images/plane.png"></div>
+    <div class="shoot"><span>发射</span></div>
+    <div class="bullet" style="display: none;"></div>
 </div>
-<script src="js/script.js" ></script>
+<div class="property">
+    <div class="nomarl"><i></i><span>x</span><span>20</span></div>
+    <div class="special"><i></i><span></span></div>
+    拖动飞机以左右移动
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>

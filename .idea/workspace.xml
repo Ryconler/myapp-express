@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/pindex.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tindex.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/games/fruit/scripts/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/fruit/scripts/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/mindexScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/mindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/mindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/games/plane/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/games/plane/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/games/plane/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/plane/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/pindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/mstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/mindex.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/teststyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/testindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/pindex.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/pindex.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,46 +22,51 @@
         <entry file="file://$PROJECT_DIR$/public/pindex.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="45" />
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#2192#2196#0" expanded="true" />
-                <element signature="e#2196#2200#0" expanded="true" />
                 <element signature="n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#2564#2568#0" expanded="true" />
-                <element signature="e#2568#2572#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/pindex.css">
+        <entry file="file://$PROJECT_DIR$/public/games/plane/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="335">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
-                <marker date="1545659337283" expanded="true" signature="2246:2546" ph="..." />
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/public/games/plane/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="-120">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/pindex.js">
+        <entry file="file://$PROJECT_DIR$/public/games/plane/js/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="360">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/games/plane/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -134,8 +131,12 @@
         <option value="$PROJECT_DIR$/public/testindex.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/teststyle.css" />
         <option value="$PROJECT_DIR$/public/javascripts/pindex.js" />
-        <option value="$PROJECT_DIR$/public/pindex.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/pindex.css" />
+        <option value="$PROJECT_DIR$/public/pindex.html" />
+        <option value="$PROJECT_DIR$/public/games/plane/js/init.js" />
+        <option value="$PROJECT_DIR$/public/games/plane/css/style.css" />
+        <option value="$PROJECT_DIR$/public/games/plane/js/script.js" />
+        <option value="$PROJECT_DIR$/public/games/plane/index.html" />
       </list>
     </option>
   </component>
@@ -154,7 +155,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,19 +171,41 @@
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="plane" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="plane" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545659529208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545981789032" />
     <property name="last_opened_file_path" value="C:/Program Files/Program/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -192,19 +214,19 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\images" />
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\javascripts" />
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public" />
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views\games" />
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\scripts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\fullpage" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\jquery-2.1.4" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\views\games\plane\jquery-2.1.4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\games\plane\images" />
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\games\plane\js" />
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\images" />
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\javascripts" />
+      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,7 +279,9 @@
       <workItem from="1545445448152" duration="11278000" />
       <workItem from="1545532318781" duration="29504000" />
       <workItem from="1545634446031" duration="1163000" />
-      <workItem from="1545652402339" duration="7043000" />
+      <workItem from="1545652402339" duration="9274000" />
+      <workItem from="1545725417450" duration="3630000" />
+      <workItem from="1545963776205" duration="15378000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -329,11 +353,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545457627652</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v1.6:pc index's layout is preliminary forming.">
+      <created>1545659841164</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545659841164</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98513000" />
+    <option name="totallyTimeSpent" value="119752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,7 +379,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -358,7 +389,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17213115" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17213115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -379,6 +410,38 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17213115" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32786885" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.39836067" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -442,7 +505,8 @@
     <MESSAGE value="v1.3" />
     <MESSAGE value="v1.4" />
     <MESSAGE value="v1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.5" />
+    <MESSAGE value="v1.6:pc index's layout is preliminary forming." />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.6:pc index's layout is preliminary forming." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/default_views/index.pug">
@@ -472,27 +536,6 @@
     <entry file="file://$PROJECT_DIR$/public/views/games/plane/style.css" />
     <entry file="file://$PROJECT_DIR$/public/views/games/plane/css.css" />
     <entry file="file://$PROJECT_DIR$/public/views/games/plane/js.js" />
-    <entry file="file://$PROJECT_DIR$/public/games/plane/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/games/plane/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/games/plane/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -568,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/mindex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/tindex.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -623,14 +659,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/pindex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/banner3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
@@ -640,31 +672,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/pindex.html">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/pindex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2192#2196#0" expanded="true" />
-            <element signature="e#2196#2200#0" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2564#2568#0" expanded="true" />
-            <element signature="e#2568#2572#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="140">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/pindex.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
           <folding>
-            <marker date="1545659337283" expanded="true" signature="2246:2546" ph="..." />
+            <marker date="1545728663330" expanded="true" signature="2639:2939" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/mindex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/games/plane/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/games/plane/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/games/plane/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/games/plane/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

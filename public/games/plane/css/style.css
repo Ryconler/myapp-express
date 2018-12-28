@@ -5,36 +5,66 @@ body {
 
 .container {
     width: 100%;
-    /*height: 100%;*/
-    background: #606060;
-    margin: auto;
+    height: 20rem;
+    /*background: #606060;*/
+    border-bottom: #fe1a19 2px solid ;
     position: relative;
 }
 
 .plane {
-    width: 50px;
-    height: 50px;
-    background: #8392ff;
-    left: 0%;
-    /*top: 90%;*/
-    position: relative;
-
+    width: 2rem;
+    height: 2rem;
+    /*background: #8392ff;*/
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
 }
-
+.plane img{
+    width: 100%;
+}
 .shoot {
-    width: 50px;
-    height: 50px;
-    background: #ff492e;
-    left: 0%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: #318fe1 2px dotted;
+    font-size: 16px;
+    line-height: 2rem;
+    text-align: center;
+    position: absolute;
+    left: 0.5rem;
     top: 50%;
-    position: relative;
-
 }
-
 .bullet {
-
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background-color: #8392ff;
+    position: absolute;
+    bottom:1rem ;
+    width: 0.5rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #ff0000;
 }
+.property{
+    position: absolute;
+    width: 100%;
+    top:20rem;
+    bottom: 0;
+    font-size: 16px;
+    overflow-y: scroll;
+}
+.property .nomarl{
+    padding: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #318fe1;
+}
+.property .nomarl i{
+    display: block;
+    float: left;
+    width: 0.5rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #ff0000;
+    margin-right: 0.5rem;
+}
+
+

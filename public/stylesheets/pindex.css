@@ -55,6 +55,7 @@ header {
 
 .header_wrap li .dropdown {
     display: none;
+    overflow: hidden;
     position: absolute;
     top: 55px;
     left: 0;
@@ -63,6 +64,7 @@ header {
     text-align: left;
     z-index: 10;
     box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+
 }
 
 .header_wrap li .dropdown a {
@@ -80,12 +82,31 @@ header {
 
 .header_wrap li:hover .dropdown {
     display: block;
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 0.3s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
 }
 
 .header_wrap li .dropdown a:hover {
     background: #e0e0e0;
 }
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    20%{
+        opacity: .2;
+    }
+    50% {
+        opacity: .5; /*中间状态 透明度为0.5*/
+    }
+    70%{
+        opacity: .7;
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
 
 /* main */
 
