@@ -1,5 +1,5 @@
 var express = require('express');
-
+var data=require('./getData')
 
 var router = express.Router();
 
@@ -9,8 +9,7 @@ router.get('/mindex', function(req, res) {
 
 });
 router.get('/', function(req, res) {
-
-    res.render('pindex');
+    res.render('pindex',data);
 });
 
 
