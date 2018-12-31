@@ -1,6 +1,6 @@
 $(function () {
     var i = 0  //应展示的图片的索引
-    var width = 1000  //图片宽度
+    var width = $(".banner img").outerWidth() //图片宽度
     var first = $(".banner .imgs li").first().clone()
     $(".banner .imgs").append(first)  //将第一张图复制粘贴到最后面，用来实现最后一张图到第一张图的无缝滑动
     var num = $(".banner .imgs li").size()  //获得li的数量
@@ -71,4 +71,53 @@ $(function () {
         }, 1500)
     })
 
+    /* 折叠按钮的拖动 */
+    var gapX
+    var gapY
+    var maxLeft = $(window).outerWidth() - $(".collapse").outerWidth()  //按钮最右边时的左距离
+    var maxTop = $(window).outerHeight() - $(".collapse").outerHeight()
+    var touchStartTime  //按钮按下时间戳
+    $(".collapse").on("touchstart", function (e) {
+        e.preventDefault()
+        var left = $(this).position().left
+        var top = $(this).position().top
+        var touchX = e.originalEvent.targetTouches[0].clientX
+        var touchY = e.originalEvent.targetTouches[0].clientY
+        gapX = touchX - left
+        gapY = touchY - top
+        //改变样式
+        $(this).css({background: "rgba(0,0,0,1)"})
+        $(".collapse .white_line").css({background: "rgba(255,255,255,1)"})
+        //获取按下时间
+        touchStartTime=e.timeStamp
+    })
+    $(".collapse").on("touchmove", function (e) {
+        // e.preventDefault()
+        var touchX = e.originalEvent.targetTouches[0].clientX
+        var touchY = e.originalEvent.targetTouches[0].clientY
+        var left = touchX - gapX
+        var top = touchY - gapY
+        //拖动边界
+        left = left < 0 ? 0 : left
+        left = left > maxLeft ? maxLeft : left
+        top = top < 0 ? 0 : top
+        top = top > maxTop ? maxTop : top
+        $(this).css({left: left + "px", top: top + "px"})
+    })
+    $(".collapse").on("touchend", function (e) {
+        $(this).css({background: "rgba(0,0,0,0.5)"})
+        $(".collapse .white_line").css({background: "rgba(255,255,255,0.5)"})
+        //获取抬起时间
+        var touchEndTime=e.timeStamp
+        if (touchEndTime-touchStartTime<100) {
+            $(".expand").stop().slideToggle()
+
+        }
+    })
+
+
+    /* 折叠下拉框的滑动 */
+    $(".expand").on("touchmove", function (e) {
+        // e.preventDefault()
+    })
 })

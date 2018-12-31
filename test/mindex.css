@@ -84,7 +84,7 @@ main {
     right: 0.5rem;
 
 
-    background-image: url("../images/bg.png");
+    background-image: url("../public/images/bg.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;

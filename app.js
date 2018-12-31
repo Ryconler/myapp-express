@@ -4,9 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var gamesRouter=require("./routes/games")
+var indexRouter = require('./routes/indexRoute');
+var usersRouter = require('./routes/usersRoute');
 
 var app = express();
 
@@ -24,7 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 //自定义路由
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use("/games",gamesRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
