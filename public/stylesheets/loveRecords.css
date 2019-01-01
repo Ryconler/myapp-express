@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*text-align: center;*/
+    background:url("../images/recordsbg.png") no-repeat;
+    background-size:80% 80%;
+    background-position: center;
+}
+.wrap .title{
+    position: absolute;
+    width: 100%;
+    color: #ff7a94;
+    font-weight: bold;
+    display: inline-block;
+    top: 0.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.wrap .content{
+    width: 70%;
+    height: 65%;
+    /*border: 1px solid red;*/
+    margin: 6rem auto 0;
+    overflow-y: scroll;
+}
+.wrap .content .content_item{
+    position: relative;
+    margin: 1rem 0;
+}
+.wrap .content .content_item span {
+    position: absolute;
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    background: #9061ff;
+    border-radius:50% ;
+}
+.wrap .content .content_item p{
+    text-align: left;
+    text-indent: 2em;
+    font-size: 1rem;
+}
+.wrap .content .content_item .date{
+    color: #e35a18;
+    right: 0;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.wrap .write{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    /*background: red;*/
+}
+.wrap .write .text{
+    display: inline-block;
+    padding: 0 0.5rem 0.3rem;
+    border-bottom:  1px solid #000000;
+}
+.wrap .write span:last-child{
+    display: inline-block;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.alert_input{
+    display: none;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    /*border: 1px solid red;*/
+    z-index: 100;
+
+}
+.alert_input .input_wrap{
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    background: #318fe1;
+}
+.alert_input .input_wrap textarea{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 3rem;
+}
+.alert_input .input_wrap .selects{
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+}
+.alert_input .input_wrap .selects select{
+    display: inline-block;
+    height: 2rem;
+    width: 30%;
+}
+.alert_input .input_wrap  .buttons{
+    width: 80%;
+    margin: 0 auto;
+}
+.alert_input .input_wrap  .buttons button{
+    display: inline-block;
+    width: 40%;
+    height: 2rem;
+}
+button.submit{
+    background: #e3c234;
+    color: #fff;
+}
+
+
+

@@ -13,6 +13,4 @@ function calc() {
 window.addEventListener("resize", calc)
 calc()
 //禁止左滑后退
-document.addEventListener("touchmove", function (ev) {
-    ev.preventDefault()
-}, false);
+

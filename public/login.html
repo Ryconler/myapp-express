@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录或注册</title>
+    <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <!--<script src="/javascripts/LoginScript.js"></script>-->
+</head>
+<body>
+<p>账号<input type="text" id="username"></p>
+<p>密码<input type="password" id="password"></p>
+<button id="submit">登录或注册</button>
+<span></span>
+<script>
+    //ajax登录
+    $(function () {
+        $("#submit").click(function () {
+            var username = $("#username").val().trim()
+            var password = $("#password").val().trim()
+            if(username==""||password==""){
+                $("span").text("账号或密码不能为空")
+            }else {
+                $.post("/users/confirmUser", {username: username, password: password},function (res) {
+                    if(res=="confirmSuccess"){
+                        $("span").text("登录成功")
+                        window.location.href="/love/records"
+                    }else if(res=="incorrect"){
+                        $("span").text("密码错误")
+                    }
+                    else if(res=="createSuccess"){
+                        $("span").text("账号创建成功，即将进行跳转")
+                        window.location.href="/love/records"
+                    }
+                    else if(res=="error"){
+                        $("span").text("内部错误")
+                    }
+                })
+            }
+
+        })
+    })
+</script>
+</body>
+</html>
