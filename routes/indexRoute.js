@@ -15,7 +15,7 @@ var data = {
 var firstFlag = true  //是否第一次访问
 /* GET home page. */
 router.get('/', async function (req, res) {
-        console.log(firstFlag)
+        console.log(new Date().toLocaleString())
         if (firstFlag) {  //是第一次访问，获得新数据
             var getData = new GetData()
             data.ntu = await getData.getNTU()
