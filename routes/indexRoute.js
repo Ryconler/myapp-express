@@ -1,8 +1,6 @@
 var express = require('express');
-var GetData = require('./getData')
-
 var router = express.Router();
-
+var GetData = require('./getData')
 
 var data = {
     ntu: [{title: "", img: "", url: "", date: ""},
