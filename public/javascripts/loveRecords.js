@@ -58,7 +58,7 @@ $(function () {
         } else {
             $.post("/love/postRecords", {content: content, year: year, month: month, day: day}, function (res) {
                 if(res=="success"){
-                    alert("记仇成功！")
+                    alert("发布成功！")
                     $(".alert_input").css({display: "none"})
                     location.reload()
                 }else {
