@@ -43,7 +43,7 @@ function DaoUsers() {
                 this.retrieveUser(userCookie.username, function (result) {
                     if (result[0].U_PASSWORD === userCookie.password) {
                         req.session.user = {username: userCookie.username}
-                        console.log(userSession)
+                        console.log(req.session.user)
                         callback && callback("yes")
                     } else {
                         // res.render('login')
