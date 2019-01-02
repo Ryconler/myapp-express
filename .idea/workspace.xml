@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/loveRecords.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/loveRecords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/loveRecords.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/loveRecords.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/loveRecords.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/loveRecords.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +15,91 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/DaoUsers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/loveRecords.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/loveRecords.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+              <folding>
+                <element signature="e#70#298#0" />
+                <element signature="e#311#489#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/loveRecords.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+              <folding>
+                <element signature="e#105#151#0" />
+                <element signature="e#178#224#0" />
+                <element signature="e#251#297#0" />
+                <element signature="e#323#369#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+              <folding>
+                <element signature="e#214#271#0" />
+                <element signature="e#277#1109#0" />
+                <element signature="e#378#1098#0" />
+                <element signature="e#418#545#0" />
+                <element signature="e#571#639#0" />
+                <element signature="e#665#1084#0" />
+                <element signature="e#834#1065#0" />
+                <element signature="e#882#1043#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/RouterUsers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,13 +173,13 @@
         <option value="$PROJECT_DIR$/public/te.html" />
         <option value="$PROJECT_DIR$/public/javascripts/LoginScript.js" />
         <option value="$PROJECT_DIR$/routes/DaoUsers.js" />
-        <option value="$PROJECT_DIR$/public/loveRecords.html" />
-        <option value="$PROJECT_DIR$/public/stylesheets/loveRecords.css" />
         <option value="$PROJECT_DIR$/routes/RouterLove.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/loveRecords.js" />
-        <option value="$PROJECT_DIR$/routes/RouterUsers.js" />
         <option value="$PROJECT_DIR$/public/login.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/login.css" />
+        <option value="$PROJECT_DIR$/routes/RouterUsers.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/loveRecords.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/loveRecords.js" />
+        <option value="$PROJECT_DIR$/public/loveRecords.html" />
       </list>
     </option>
   </component>
@@ -134,18 +221,6 @@
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -164,7 +239,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546419931715" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546421093934" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -263,7 +338,7 @@
       <workItem from="1546243208538" duration="421000" />
       <workItem from="1546263560175" duration="67000" />
       <workItem from="1546310885436" duration="38916000" />
-      <workItem from="1546393074042" duration="25649000" />
+      <workItem from="1546393074042" duration="26741000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -440,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546419586421</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="v2.0.4:添加登出功能">
+      <created>1546419942962</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1546419942962</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253247000" />
+    <option name="totallyTimeSpent" value="254339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,6 +539,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49866667" visible="true" weight="0.33736762" />
       <window_info id="Structure" order="1" sideWeight="0.50133336" side_tool="true" weight="0.33736762" />
@@ -838,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DaoUsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/DaoLoveRecords.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -870,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -894,82 +963,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/RouterUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/loveRecords.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        <state relative-caret-position="181">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
           <folding>
             <element signature="e#105#151#0" />
             <element signature="e#178#224#0" />
             <element signature="e#251#297#0" />
             <element signature="e#323#369#0" />
-            <element signature="e#453#551#0" />
-            <element signature="e#486#539#0" />
-            <element signature="e#588#1287#0" />
-            <element signature="e#813#934#0" />
-            <element signature="e#862#924#0" />
-            <element signature="e#985#1111#0" />
-            <element signature="e#1039#1101#0" />
-            <element signature="e#1160#1280#0" />
-            <element signature="e#1208#1270#0" />
-            <element signature="e#1333#1390#0" />
-            <element signature="e#1427#1498#0" />
-            <element signature="e#1535#2158#0" />
-            <element signature="e#1721#1760#0" />
-            <element signature="e#1766#2151#0" />
-            <element signature="e#1879#2140#0" />
-            <element signature="e#1915#2068#0" />
-            <element signature="e#2073#2126#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/RouterUsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#141#330#0" />
-            <element signature="e#407#1007#0" />
-            <element signature="e#1057#1460#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/loveRecords.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="100">
+          <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
           <folding>
-            <element signature="e#1#35#0" />
-            <element signature="e#38#63#0" />
             <element signature="e#70#298#0" />
             <element signature="e#311#489#0" />
-            <element signature="e#504#620#0" />
-            <element signature="e#649#696#0" />
-            <element signature="e#731#901#0" />
-            <element signature="e#932#1000#0" />
-            <element signature="e#1035#1118#0" />
-            <element signature="e#1132#1265#0" />
-            <element signature="e#1284#1383#0" />
-            <element signature="e#1412#1617#0" />
-            <element signature="e#1631#1758#0" />
-            <element signature="e#1783#1913#0" />
-            <element signature="e#1947#2024#0" />
-            <element signature="e#2058#2120#0" />
-            <element signature="e#2161#2225#0" />
-            <element signature="e#2260#2299#0" />
-            <element signature="e#2341#2405#0" />
-            <element signature="e#2419#2464#0" />
-            <element signature="e#2474#2724#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DaoUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/loveRecords.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        <state relative-caret-position="200">
+          <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
         </state>
       </provider>
     </entry>

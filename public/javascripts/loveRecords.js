@@ -73,4 +73,7 @@ $(function () {
             location.reload()
         })
     })
+    $(".index").click(function () {
+        window.location.href="/"
+    })
 })
