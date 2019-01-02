@@ -11,7 +11,6 @@ $(function () {
     }else if(hour>=19&&hour<=4){
         $(".welcome span").text("晚上好")
     }
-    // console.log(date.getHours())
     $(".welcome").slideDown("slow",function () {
         setTimeout(function () {
             $(".welcome").slideUp("slow")
@@ -41,6 +40,7 @@ $(function () {
         })
     }
     init()
+    //各种事件
     $(".text").click(function (e) {
         $(".alert_input").css({display: "block"})
     })
@@ -67,5 +67,10 @@ $(function () {
             })
         }
 
+    })
+    $(".quit").click(function () {
+        $.get("/users/logout",function (res) {
+            location.reload()
+        })
     })
 })

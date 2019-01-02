@@ -77,10 +77,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     letter-spacing: 0.125rem;
 }
-
-.login-txt {
+.login-info{
     text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+.login-info a{
     color: #fff;
+ }
+.login-txt{
+    text-align: center;
+    color: red;
     font-size: 0.8rem;
 }
 
