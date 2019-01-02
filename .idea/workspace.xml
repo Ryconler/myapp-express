@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/loveRecords.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/loveRecords.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/loveRecords.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/loveRecords.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/loveRecords.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/loveRecords.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/RouterLove.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/RouterLove.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/RouterUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/RouterUsers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,132 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/loveRecords.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/loveRecords.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding>
-                <element signature="e#1#35#0" />
-                <element signature="e#38#63#0" />
-                <element signature="e#70#298#0" />
-                <element signature="e#311#489#0" />
-                <element signature="e#504#620#0" />
-                <element signature="e#649#696#0" />
-                <element signature="e#731#901#0" />
-                <element signature="e#932#1000#0" />
-                <element signature="e#1035#1118#0" />
-                <element signature="e#1132#1265#0" />
-                <element signature="e#1284#1383#0" />
-                <element signature="e#1412#1617#0" />
-                <element signature="e#1631#1758#0" />
-                <element signature="e#1783#1913#0" />
-                <element signature="e#1947#2024#0" />
-                <element signature="e#2058#2120#0" />
-                <element signature="e#2161#2225#0" />
-                <element signature="e#2260#2299#0" />
-                <element signature="e#2341#2405#0" />
-                <element signature="e#2419#2464#0" />
-                <element signature="e#2474#2724#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/RouterUsers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding>
-                <element signature="e#141#330#0" />
-                <element signature="e#407#1007#0" />
-                <element signature="e#1057#1460#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/loveRecords.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-              <folding>
-                <element signature="e#105#151#0" />
-                <element signature="e#178#224#0" />
-                <element signature="e#251#297#0" />
-                <element signature="e#323#369#0" />
-                <element signature="e#453#551#0" />
-                <element signature="e#486#539#0" />
-                <element signature="e#588#1287#0" />
-                <element signature="e#813#934#0" />
-                <element signature="e#862#924#0" />
-                <element signature="e#985#1111#0" />
-                <element signature="e#1039#1101#0" />
-                <element signature="e#1160#1280#0" />
-                <element signature="e#1208#1270#0" />
-                <element signature="e#1333#1390#0" />
-                <element signature="e#1427#1498#0" />
-                <element signature="e#1535#2158#0" />
-                <element signature="e#1721#1760#0" />
-                <element signature="e#1766#2151#0" />
-                <element signature="e#1879#2140#0" />
-                <element signature="e#1915#2068#0" />
-                <element signature="e#2073#2126#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding>
-                <element signature="e#214#271#0" />
-                <element signature="e#277#1109#0" />
-                <element signature="e#378#1098#0" />
-                <element signature="e#418#545#0" />
-                <element signature="e#571#639#0" />
-                <element signature="e#665#1084#0" />
-                <element signature="e#834#1065#0" />
-                <element signature="e#882#1043#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -296,7 +164,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546419445796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546419931715" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -395,7 +263,7 @@
       <workItem from="1546243208538" duration="421000" />
       <workItem from="1546263560175" duration="67000" />
       <workItem from="1546310885436" duration="38916000" />
-      <workItem from="1546393074042" duration="25302000" />
+      <workItem from="1546393074042" duration="25649000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -565,11 +433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546417193475</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="v2.0.4:添加登出功能">
+      <created>1546419586421</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1546419586421</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252900000" />
+    <option name="totallyTimeSpent" value="253247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,7 +457,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49866667" visible="true" weight="0.33736762" />
       <window_info id="Structure" order="1" sideWeight="0.50133336" side_tool="true" weight="0.33736762" />
@@ -718,7 +592,8 @@
     <MESSAGE value="v2.0.1:删除一年霉运" />
     <MESSAGE value="v2.0.2:记仇小本本" />
     <MESSAGE value="v2.0.3:账号登录系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0.3:账号登录系统" />
+    <MESSAGE value="v2.0.4:添加登出功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0.4:添加登出功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/tindex.js">
@@ -977,43 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/loveRecords.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="e#1#35#0" />
-            <element signature="e#38#63#0" />
-            <element signature="e#70#298#0" />
-            <element signature="e#311#489#0" />
-            <element signature="e#504#620#0" />
-            <element signature="e#649#696#0" />
-            <element signature="e#731#901#0" />
-            <element signature="e#932#1000#0" />
-            <element signature="e#1035#1118#0" />
-            <element signature="e#1132#1265#0" />
-            <element signature="e#1284#1383#0" />
-            <element signature="e#1412#1617#0" />
-            <element signature="e#1631#1758#0" />
-            <element signature="e#1783#1913#0" />
-            <element signature="e#1947#2024#0" />
-            <element signature="e#2058#2120#0" />
-            <element signature="e#2161#2225#0" />
-            <element signature="e#2260#2299#0" />
-            <element signature="e#2341#2405#0" />
-            <element signature="e#2419#2464#0" />
-            <element signature="e#2474#2724#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/loveRecords.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/RouterLove.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1025,14 +863,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/RouterUsers.js">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="45">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
-            <element signature="e#141#330#0" />
-            <element signature="e#407#1007#0" />
-            <element signature="e#1057#1460#0" />
+            <element signature="e#214#271#0" />
+            <element signature="e#277#1109#0" />
+            <element signature="e#378#1098#0" />
+            <element signature="e#418#545#0" />
+            <element signature="e#571#639#0" />
+            <element signature="e#665#1084#0" />
+            <element signature="e#834#1065#0" />
+            <element signature="e#882#1043#0" />
           </folding>
         </state>
       </provider>
@@ -1067,34 +924,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.html">
+    <entry file="file://$PROJECT_DIR$/routes/RouterUsers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="179">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="e#214#271#0" />
-            <element signature="e#277#1109#0" />
-            <element signature="e#378#1098#0" />
-            <element signature="e#418#545#0" />
-            <element signature="e#571#639#0" />
-            <element signature="e#665#1084#0" />
-            <element signature="e#834#1065#0" />
-            <element signature="e#882#1043#0" />
+            <element signature="e#141#330#0" />
+            <element signature="e#407#1007#0" />
+            <element signature="e#1057#1460#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/login.css">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/loveRecords.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        <state relative-caret-position="200">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#1#35#0" />
+            <element signature="e#38#63#0" />
+            <element signature="e#70#298#0" />
+            <element signature="e#311#489#0" />
+            <element signature="e#504#620#0" />
+            <element signature="e#649#696#0" />
+            <element signature="e#731#901#0" />
+            <element signature="e#932#1000#0" />
+            <element signature="e#1035#1118#0" />
+            <element signature="e#1132#1265#0" />
+            <element signature="e#1284#1383#0" />
+            <element signature="e#1412#1617#0" />
+            <element signature="e#1631#1758#0" />
+            <element signature="e#1783#1913#0" />
+            <element signature="e#1947#2024#0" />
+            <element signature="e#2058#2120#0" />
+            <element signature="e#2161#2225#0" />
+            <element signature="e#2260#2299#0" />
+            <element signature="e#2341#2405#0" />
+            <element signature="e#2419#2464#0" />
+            <element signature="e#2474#2724#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/loveRecords.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
         </state>
       </provider>
     </entry>

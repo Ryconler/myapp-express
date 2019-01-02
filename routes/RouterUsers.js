@@ -14,10 +14,10 @@ router.get('/login', function (req, res) {
     })
 
 })
-
 router.get('/logout', function (req, res) {
     delete req.session.user;
     res.clearCookie("user");
+    res.send("success")
 })
 
 /* GET users listing. */
