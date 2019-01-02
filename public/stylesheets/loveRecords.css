@@ -5,6 +5,7 @@
 li{
     list-style: none;
 }
+
 .wrap{
     position: absolute;
     top: 0;
@@ -126,6 +127,19 @@ li{
 button.submit{
     background: #e3c234;
     color: #fff;
+}
+
+.welcome{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    background: rgb(113, 175, 255);
+    color: #f0f0f0;
+    box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 50;
 }
 
 

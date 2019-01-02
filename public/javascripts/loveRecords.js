@@ -1,4 +1,22 @@
 $(function () {
+    //欢迎弹框
+    var date=new Date()
+    var hour=date.getHours()
+    if(hour>=5&&hour<=10){
+        $(".welcome span").text("上午好")
+    }else if(hour>=11&&hour<=13){
+        $(".welcome span").text("中午好")
+    }else if(hour>=14&&hour<=18){
+        $(".welcome span").text("下午好")
+    }else if(hour>=19&&hour<=4){
+        $(".welcome span").text("晚上好")
+    }
+    // console.log(date.getHours())
+    $(".welcome").slideDown("slow",function () {
+        setTimeout(function () {
+            $(".welcome").slideUp("slow")
+        },1500)
+    })
     //初始化各种输入框
     function init() {
         var date = new Date()
@@ -22,7 +40,6 @@ $(function () {
             }
         })
     }
-
     init()
     $(".text").click(function (e) {
         $(".alert_input").css({display: "block"})

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LoveStory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
     <link type="text/css" rel="stylesheet" href="/stylesheets/loveRecords.css">
     <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
@@ -10,6 +10,9 @@
     <script src="/javascripts/loveRecords.js"></script>
 </head>
 <body>
+<div class="welcome">
+    <h2><span></span>，<%=user.username %></h2>
+</div>
 <div class="alert_input">
     <div class="input_wrap" clearfix>
         <textarea>
@@ -77,22 +80,21 @@
         </div>
     </div>
 
-
 </div>
 <div class="wrap">
-    <div class="title">♥记仇小本本</div>
+    <div class="title">♥LoveStory</div>
     <div class="content">
         <% data.forEach(function(item){%>
         <div class="content_item">
             <span></span>
-            <p><%=item.content %></p>
-            <div class="date"><em><%=item.year %>年<%=item.month %>月<%=item.day %>日</em></div>
+            <p><%=item.LR_CONTENT %></p>
+            <div class="date"><em><%=item.LR_YEAR %>年<%=item.LR_MONTH %>月<%=item.LR_DAY %>日</em></div>
         </div>
         <% }) %>
     </div>
     <div class="write">
         <div class="text">
-            <span>我要记仇</span>&nbsp;<span>✏</span>
+            <span>我也要写</span>&nbsp;<span>✏</span>
         </div>
     </div>
 </div>

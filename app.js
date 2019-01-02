@@ -2,12 +2,13 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/indexRoute');
-var usersRouter = require('./routes/usersRoute');
-var otherRouter = require('./routes/otherRoute');
-var loveRouter = require('./routes/loveRoute');
+var indexRouter = require('./routes/RouterIndex');
+var usersRouter = require('./routes/RouterUsers');
+var otherRouter = require('./routes/RouterOther');
+var loveRouter = require('./routes/RouterLove');
 
 var app = express();
 
@@ -21,6 +22,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// 使用 session 中间件
+app.use(session({
+    secret :  'secret', // 对session id 相关的cookie 进行签名
+    resave : true,
+    saveUninitialized: false, // 是否保存未初始化的会话
+    cookie : {
+        maxAge : 1000 * 60 * 3, // 设置 session 的有效时间，单位毫秒
+    },
+}));
 
 //自定义路由
 app.use('/', indexRouter);
