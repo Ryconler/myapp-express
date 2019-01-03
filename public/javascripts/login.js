@@ -18,6 +18,10 @@ $(function () {
                         if (res == "success") {
                             $(".login-txt").text("创建成功，正在为您跳转...")
                             window.location.href = "/love/records"
+                        }else if(res=="forbid"){
+                            $(".login-txt").text("目前禁止新用户注册，请联系管理员。")
+                        }else {
+                            $(".login-txt").text("内部错误")
                         }
                     })
                 }

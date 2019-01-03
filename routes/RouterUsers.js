@@ -46,15 +46,16 @@ router.post('/createUser', function (req, res) {
     var username = req.body.username
     var password = req.body.password
     var u = new User()
-    u.createUser(username, password, function (result) {
-        if (result == "success") {
-            req.session.user = {username: username}
-            res.cookie("user", {username: username, password: password})
-            res.send("success")
-        } else {
-            res.send("error")
-        }
-    })
+    // u.createUser(username, password, function (result) {
+    //     if (result == "success") {
+    //         req.session.user = {username: username}
+    //         res.cookie("user", {username: username, password: password})
+    //         res.send("success")
+    //     } else {
+    //         res.send("error")
+    //     }
+    // })
+    res.send("forbid")
 })
 
 module.exports = router;
