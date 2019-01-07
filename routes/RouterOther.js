@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/deleteBadLuck',function (req,res) {
     console.log(new Date().toLocaleString())
-    res.render('deleteBadLuck')
+    res.render('deletebadluck')
 })
 
 module.exports=router

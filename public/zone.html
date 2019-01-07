@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoveStory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/common.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/zone.css">
+    <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/calcfontsize.js"></script>
+    <script src="/javascripts/common.js"></script>
+    <script src="/javascripts/zone.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="pop">
+        <div class="mycontent">
+            <div class="mycontent_item" id="myzone"><p>我的空间</p></div>
+            <div class="mycontent_space"></div>
+            <div class="mycontent_item" id="message"><p>消息</p></div>
+            <div class="mycontent_space"></div>
+            <div class="mycontent_item" id="quit"><p>退出</p></div>
+        </div>
+        <div class="editcontent">
+            <div class="info"></div>
+            <div class="tip"></div>
+            <input type="text" id="input_content"/>
+            <button class="cancel">取消</button>
+            <button class="submit">确定</button>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header_wrap">
+            <div class="back">
+                <a href="/love/records"><div class="back_wrap"></div></a>
+            </div>
+            <div class="title">
+                <div class="title_wrap">
+                    <span>我的空间</span><i></i>
+                </div>
+            </div>
+            <div class="my">
+                <div class="my_wrap">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_wrap">
+            <div class="module_title publish"><p>我的发布</p></div>
+            <div class="publish_content">
+                <% data.forEach(function(item){%>
+                <div class="content_item">
+                    <span></span>
+                    <p><%=item.LR_CONTENT %></p>
+                    <div class="date"><em><%=item.LR_YEAR %>年<%=item.LR_MONTH %>月<%=item.LR_DAY %>日</em></div>
+                </div>
+                <% }) %>
+                <script>
+                    $(function () {
+                        $(".publish_content .content_item span").each(function (index) {
+                            var r = Math.floor(Math.random() * 256);
+                            var g = Math.floor(Math.random() * 256);
+                            var b = Math.floor(Math.random() * 256);
+                            var rgb = '(' + r + ',' + g + ',' + b + ')';
+                            $(this).css({background: "rgb" + rgb})
+                        })
+                    })
+                </script>
+            </div>
+            <div class="module_title pet"><p>我的宠物</p></div>
+            <div class="pet_content">
+                <iframe  src="/pet.html" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+            <div class="module_title profile"><p>我的信息</p></div>
+            <div class="profile_content">
+                <h3>用户名</h3>
+                <p><%=user.username %><span id="edit_username">更改</span></p>
+                <h3>密码</h3>
+                <p><%=user.password %><span id="edit_password">更改</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

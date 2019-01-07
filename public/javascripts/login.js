@@ -5,7 +5,11 @@ $(function () {
         var password = $("#password").val().trim()
         if (username == "" || password == "") {
             $(".login-txt").text("账号或密码不能为空")
-        } else {
+        } else if(username.length>10){
+            $(".login-txt").text("账号长度不能超过10哦")
+        } else if(password.length>20){
+            $(".login-txt").text("密码长度不能超过20哦")
+        }else {
             $.post("/users/retrieveUser", {username: username, password: password}, function (res) {
                 if (res == "success") {
                     $(".login-txt").text("登录成功")

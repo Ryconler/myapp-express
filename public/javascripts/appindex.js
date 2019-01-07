@@ -1,6 +1,6 @@
 $(function () {
     var i = 0  //应展示的图片的索引
-    var width = $(".banner img").outerWidth() //图片宽度
+    var width = $(".banner").outerWidth() //图片宽度
     var first = $(".banner .imgs li").first().clone()
     $(".banner .imgs").append(first)  //将第一张图复制粘贴到最后面，用来实现最后一张图到第一张图的无缝滑动
     var num = $(".banner .imgs li").size()  //获得li的数量

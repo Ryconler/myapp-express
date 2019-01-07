@@ -9,20 +9,30 @@ var connection = mysql.createConnection({
 connection.connect();
 
 function daoLoveRecords() {
-    this.readRecords = function (callback) {
+    this.retrieveRecords = function (callback) {
         connection.query('SELECT * FROM love_record ORDER BY LR_ORDER_DATE DESC', function (err, results) {
             if (err) {
                 console.log('[SELECT ERROR] - ', err.message);
-                callback && callback()
+                return
             } else {
                 // console.log(results)
                 callback && callback(results)
             }
         });
     }
-
-    this.addRecords = function (content, year, month, day, order_date, callback) {
-        connection.query('INSERT INTO love_record(LR_CONTENT,LR_YEAR,LR_MONTH,LR_DAY,LR_ORDER_DATE) VALUES(?,?,?,?,?)', [content, year, month, day, order_date], function (err, result) {
+    this.retrieveRecordsByUid=function (u_id,callback) {
+        connection.query("SELECT * FROM love_record WHERE U_ID=? ORDER BY LR_ORDER_DATE DESC",u_id,function (err,results) {
+            if (err) {
+                console.log('[SELECT ERROR] - ', err.message);
+                return
+            } else {
+                // console.log(result)
+                callback && callback(results)
+            }
+        })
+    }
+    this.createRecords = function (content, year, month, day, order_date,u_id, callback) {
+        connection.query('INSERT INTO love_record(LR_CONTENT,LR_YEAR,LR_MONTH,LR_DAY,LR_ORDER_DATE,U_ID) VALUES(?,?,?,?,?,?)', [content, year, month, day, order_date,u_id], function (err, result) {
             if (err) {
                 console.log('[INSERT ERROR] - ', err.message);
                 callback&&callback("error")
@@ -32,7 +42,8 @@ function daoLoveRecords() {
         })
 
     }
+
 }
 
-// new daoLoveRecords().readRecords()
+// new daoLoveRecords().retrieveRecordsByUid(1)
 module.exports = daoLoveRecords

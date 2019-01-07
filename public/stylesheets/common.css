@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container .pop {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.pop .mycontent {
+    position: absolute;
+    display: none;
+    right: 2.326rem;
+    top: 0.375rem;
+    width: 7rem;
+    background: pink;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    border: 1px solid pink;
+    z-index: 100;
+}
+
+.pop .mycontent .mycontent_item {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.pop .mycontent .mycontent_item p {
+    line-height: 2.5rem;
+    margin-left: 0.5rem;
+}
+
+.pop .mycontent .mycontent_item:hover {
+    background: #ff6669;
+}
+
+.pop .mycontent .mycontent_space {
+    width: 100%;
+    height: 0.1rem;
+    background: #f0f0f0;
+}
+
+
+.container .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2.5rem;
+    /*background: #318fe1;*/
+}
+
+.container .header .header_wrap {
+    position: relative;
+    width: 94%;
+    height: 1.75rem;
+    margin: 0.375rem auto;
+    /*background: #ce8483;*/
+}
+
+.header_wrap .back {
+    position: absolute;
+    left: 0;
+    width: 1.75rem;
+    height: 100%;
+}
+
+.header_wrap .back .back_wrap {
+    width: 100%;
+    height: 100%;
+    background: url("../images/icon.png") no-repeat;
+    background-size: 1.75rem;
+}
+
+.header_wrap .title {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 25%;
+}
+
+.header_wrap .title .title_wrap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: pink;
+    font-size: 1.3rem;
+}
+
+.header_wrap .title .title_wrap i {
+    display: inline-block;
+    height: 1.75rem;
+    width: 1.75rem;
+
+}
+
+.header_wrap .my {
+    position: absolute;
+    right: 0;
+    width: 1.75rem;
+    height: 100%;
+}
+
+.header_wrap .my .my_wrap {
+    width: 100%;
+    height: 100%;
+    background: url("../images/icon.png") no-repeat;
+    background-size: 1.75rem;
+    background-position: 0 -1.75rem;
+}
+
+.container .main {
+    position: absolute;
+    top: 2.5rem;
+    bottom: 0;
+    width: 100%;
+    /*background: gold;*/
+}
+
+.container .main .main_wrap {
+    position: relative;
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    /*background: #ce8483;*/
+}
+
+button.submit {
+    background: #e33f25;
+    color: #fff;
+}

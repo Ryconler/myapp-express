@@ -98,7 +98,8 @@
     }
     .title .title_line{
         width: 18rem;
-        margin: 0.4rem auto 0;
+        left: 0.6rem;
+        margin-top: 0.4rem
     }
     .content ul{
         display: block;

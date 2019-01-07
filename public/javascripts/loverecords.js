@@ -1,22 +1,26 @@
 $(function () {
-    //欢迎弹框
-    var date=new Date()
-    var hour=date.getHours()
-    if(hour>=5&&hour<=10){
-        $(".welcome span").text("上午好")
-    }else if(hour>=11&&hour<=13){
-        $(".welcome span").text("中午好")
-    }else if(hour>=14&&hour<=18){
-        $(".welcome span").text("下午好")
-    }else if(hour>=19&&hour<=4){
-        $(".welcome span").text("晚上好")
+
+    //welcome弹框
+    function welcome() {
+        var date=new Date()
+        var hour=date.getHours()
+        if(hour>=5&&hour<=10){
+            $(".welcome span").text("上午好")
+        }else if(hour>=11&&hour<=13){
+            $(".welcome span").text("中午好")
+        }else if(hour>=14&&hour<=18){
+            $(".welcome span").text("下午好")
+        }else if(hour>=19||hour<=4){
+            $(".welcome span").text("晚上好")
+        }
+        $(".welcome").slideDown("normal",function () {
+            setTimeout(function () {
+                $(".welcome").slideUp("normal")
+            },1000)
+        })
     }
-    $(".welcome").slideDown("slow",function () {
-        setTimeout(function () {
-            $(".welcome").slideUp("slow")
-        },1500)
-    })
-    //初始化各种输入框
+    welcome()
+    //将输入框内容输入框还原
     function init() {
         var date = new Date()
         var year = date.getFullYear()
@@ -40,7 +44,7 @@ $(function () {
         })
     }
     init()
-    //各种事件
+    //输入框事件
     $(".text").click(function (e) {
         $(".alert_input").css({display: "block"})
     })
@@ -68,12 +72,6 @@ $(function () {
         }
 
     })
-    $(".quit").click(function () {
-        $.get("/users/logout",function (res) {
-            location.reload()
-        })
-    })
-    $(".index").click(function () {
-        window.location.href="/"
-    })
+
+
 })
