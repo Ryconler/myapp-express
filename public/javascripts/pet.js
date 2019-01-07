@@ -227,7 +227,6 @@ $(function () {
         beard()
         hands()
     }
-
     /* 加载宠物模块 */
     $.get("/pet/mypet",function (res) {
         //四个属性值设置
@@ -273,7 +272,6 @@ $(function () {
             drawPet()
         }
     })
-
     //喂食
     $(".operation p:nth-child(1) button").click(function () {
         $.post("/pet/addExpByFood",{exp:50},function (res) {
