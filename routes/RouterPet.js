@@ -1,12 +1,13 @@
 var express = require('express');
 var Pet = require('./DaoPet')
 
+var maxExp=9999
 //达到相应等级需要的总经验
-var levelExp = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700, 3250]
+var levelExp = [0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700, 3250,maxExp]
 
 //经验转等级
 function exp2level(exp) {
-    for (var i = 1; i < 11; i++) {
+    for (var i = 1; i < levelExp.length; i++) {
         if (exp < levelExp[i]) {
             return i - 1
         }

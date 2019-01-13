@@ -6,10 +6,10 @@ $(function () {
     //每次升级需要的经验
     var maxExp=[0,100,150,200,250,300,350,400,450,500,550]
     //达到相应等级需要的总经验
-    var levelExp=[0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700, 3250]
+    var levelExp=[0, 100, 250, 450, 700, 1000, 1350, 1750, 2200, 2700, 3250,99999]
 
     function exp2level(exp){
-        for(var i=1;i<11;i++){
+        for(var i=1;i<levelExp.length;i++){
             if(exp<levelExp[i]){
                 return i-1
             }
@@ -240,12 +240,17 @@ $(function () {
         var level=exp2level(exp) //当前等级
         $(".level_info_wrap span").eq(0).text("等级"+level)
         $(".level_info_wrap span").eq(1).text("等级"+(level+1))
-        for(var i=0;i<11;i++){
+        for(var i=0;i<maxExp.length;i++){
             if(exp<levelExp[i]){
                 // console.log(exp-levelExp[i-1])
                 $("#level").attr({value:exp-levelExp[i-1],max:maxExp[i]})  //根据经验设置进度条的值
                 break
             }
+        }
+        //达到最大等级
+        if(level===10){
+            $(".level_info_wrap span").eq(1).text("最大等级")
+            $("#level").attr({value:100,max:100})  //根据经验设置进度条的值
         }
         //0级为宠物蛋
         if(level===0){

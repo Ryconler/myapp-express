@@ -48,7 +48,7 @@ function DaoPet() {
                     callback&&callback("success")
                 }
             })
-        }else {
+        }else {   //1级以上升级
             var dL=newLevel-oldLevel
             connection.query("UPDATE pet SET P_HP=P_HP+?,P_POWER=P_POWER+?,P_SPEED=P_SPEED+?,P_TALENT=P_TALENT+? WHERE U_ID=?",
                 [dL*100,dL*10,dL*0.1,dL*5,u_id],function (err) {
