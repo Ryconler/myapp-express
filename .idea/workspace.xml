@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/pet.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/pet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/DaoPet.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/DaoPet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/RouterPet.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/RouterPet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/common.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,62 +15,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/pet.html">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/RouterPet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="140">
+              <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
               <folding>
-                <element signature="e#380#416#0" />
-                <element signature="e#459#682#0" />
-                <element signature="e#548#679#0" />
-                <element signature="e#583#626#0" />
-                <element signature="e#632#673#0" />
-                <element signature="e#742#1898#0" />
-                <element signature="e#3897#3909#0" />
+                <element signature="e#1993#3145#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/pet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="252" column="36" lean-forward="true" selection-start-line="252" selection-start-column="36" selection-end-line="252" selection-end-column="36" />
-              <folding>
-                <element signature="e#457#849#0" />
-                <element signature="e#872#6250#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/www">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -83,6 +40,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="354">
               <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1741">
+              <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -146,7 +112,6 @@
         <option value="$PROJECT_DIR$/public/javascripts/login.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/loverecords.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/common.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/common.js" />
         <option value="$PROJECT_DIR$/routes/DaoLoveRecords.js" />
         <option value="$PROJECT_DIR$/public/javascripts/calcfontsize.js" />
         <option value="$PROJECT_DIR$/public/javascripts/appindex.js" />
@@ -169,6 +134,7 @@
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/routes/RouterPet.js" />
         <option value="$PROJECT_DIR$/public/javascripts/pet.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/common.js" />
       </list>
     </option>
   </component>
@@ -233,7 +199,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547382376344" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547384478990" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -338,7 +304,7 @@
       <workItem from="1546654651847" duration="30713000" />
       <workItem from="1546827118205" duration="24509000" />
       <workItem from="1546858747756" duration="775000" />
-      <workItem from="1547379732526" duration="1890000" />
+      <workItem from="1547379732526" duration="2682000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -550,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546853329829</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="v2.0.6:宠物系统60%">
+      <created>1547382441214</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1547382441224</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363864000" />
+    <option name="totallyTimeSpent" value="364656000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,7 +539,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49866667" visible="true" weight="0.24054463" />
       <window_info id="Structure" order="1" sideWeight="0.50133336" side_tool="true" weight="0.33736762" />
@@ -705,7 +679,8 @@
     <MESSAGE value="v2.0.4:添加登出功能" />
     <MESSAGE value="v2.0.5:暂时禁止了新用户注册功能" />
     <MESSAGE value="v2.0.6:宠物系统50%" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0.6:宠物系统50%" />
+    <MESSAGE value="v2.0.6:宠物系统60%" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0.6:宠物系统60%" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/games/plane/index.html">
@@ -860,13 +835,6 @@
             <element signature="e#1237#1280#0" />
             <element signature="e#1286#1327#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1237,34 +1205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DaoPet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="54" column="30" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1279,19 +1223,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/pet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/RouterPet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="140">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
           <folding>
-            <element signature="e#380#416#0" />
-            <element signature="e#459#682#0" />
-            <element signature="e#548#679#0" />
-            <element signature="e#583#626#0" />
-            <element signature="e#632#673#0" />
-            <element signature="e#742#1898#0" />
-            <element signature="e#3897#3909#0" />
+            <element signature="e#1993#3145#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DaoPet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1741">
+          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
         </state>
       </provider>
     </entry>
