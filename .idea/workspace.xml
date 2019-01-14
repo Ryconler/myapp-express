@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/DaoLoveRecords.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/DaoLoveRecords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/DaoPet.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/DaoPet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/DaoUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/DaoUsers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="720">
               <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
             </state>
           </provider>
@@ -26,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/RouterPet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+            <state relative-caret-position="1060">
+              <caret line="65" column="49" lean-forward="true" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
               <folding>
                 <element signature="e#1993#3145#0" />
               </folding>
@@ -38,17 +40,78 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/DaoPet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="80">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding>
+                <element signature="e#354#558#0" />
+                <element signature="e#375#446#0" />
+                <element signature="e#451#548#0" />
+                <element signature="e#621#923#0" />
+                <element signature="e#712#916#0" />
+                <element signature="e#733#804#0" />
+                <element signature="e#809#906#0" />
+                <element signature="e#1002#1973#0" />
+                <element signature="e#1042#1514#0" />
+                <element signature="e#1307#1503#0" />
+                <element signature="e#1332#1415#0" />
+                <element signature="e#1420#1489#0" />
+                <element signature="e#1519#1967#0" />
+                <element signature="e#1760#1956#0" />
+                <element signature="e#1785#1868#0" />
+                <element signature="e#1873#1942#0" />
+                <element signature="e#2030#2302#0" />
+                <element signature="e#2127#2295#0" />
+                <element signature="e#2148#2219#0" />
+                <element signature="e#2224#2285#0" />
+                <element signature="e#2377#2762#0" />
+                <element signature="e#2559#2755#0" />
+                <element signature="e#2584#2667#0" />
+                <element signature="e#2672#2741#0" />
+                <element signature="e#2826#3106#0" />
+                <element signature="e#2931#3099#0" />
+                <element signature="e#2952#3023#0" />
+                <element signature="e#3028#3089#0" />
+                <element signature="e#3171#3453#0" />
+                <element signature="e#3278#3446#0" />
+                <element signature="e#3299#3370#0" />
+                <element signature="e#3375#3436#0" />
+                <element signature="e#3518#3800#0" />
+                <element signature="e#3625#3793#0" />
+                <element signature="e#3646#3717#0" />
+                <element signature="e#3722#3783#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/DaoLoveRecords.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/DaoUsers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <element signature="e#260#577#0" />
+                <element signature="e#641#988#0" />
+                <element signature="e#1051#1398#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/www">
+        <entry file="file://$PROJECT_DIR$/routes/MysqlConnect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1741">
-              <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+            <state relative-caret-position="180">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -84,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/usersRoute.js" />
-        <option value="$PROJECT_DIR$/public/files/accounts.json" />
         <option value="$PROJECT_DIR$/public/games/plane/js/init.js" />
         <option value="$PROJECT_DIR$/public/test.html" />
         <option value="$PROJECT_DIR$/routes/indexRoute.js" />
@@ -112,7 +173,6 @@
         <option value="$PROJECT_DIR$/public/javascripts/login.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/loverecords.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/common.css" />
-        <option value="$PROJECT_DIR$/routes/DaoLoveRecords.js" />
         <option value="$PROJECT_DIR$/public/javascripts/calcfontsize.js" />
         <option value="$PROJECT_DIR$/public/javascripts/appindex.js" />
         <option value="$PROJECT_DIR$/public/appindex.html" />
@@ -125,16 +185,19 @@
         <option value="$PROJECT_DIR$/public/javascripts/zone.js" />
         <option value="$PROJECT_DIR$/public/javascripts/drawpet.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/zone.css" />
-        <option value="$PROJECT_DIR$/routes/DaoUsers.js" />
         <option value="$PROJECT_DIR$/routes/qqq.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/pet.css" />
         <option value="$PROJECT_DIR$/public/pet.html" />
         <option value="$PROJECT_DIR$/public/petexplanation.html" />
-        <option value="$PROJECT_DIR$/routes/DaoPet.js" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/routes/RouterPet.js" />
         <option value="$PROJECT_DIR$/public/javascripts/pet.js" />
         <option value="$PROJECT_DIR$/public/javascripts/common.js" />
+        <option value="$PROJECT_DIR$/routes/Reconnect.js" />
+        <option value="$PROJECT_DIR$/routes/MysqlConnect.js" />
+        <option value="$PROJECT_DIR$/routes/DaoUsers.js" />
+        <option value="$PROJECT_DIR$/routes/DaoLoveRecords.js" />
+        <option value="$PROJECT_DIR$/routes/DaoPet.js" />
       </list>
     </option>
   </component>
@@ -158,8 +221,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,17 +234,6 @@
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
@@ -199,7 +251,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547384499604" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547436086418" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -304,7 +356,9 @@
       <workItem from="1546654651847" duration="30713000" />
       <workItem from="1546827118205" duration="24509000" />
       <workItem from="1546858747756" duration="775000" />
-      <workItem from="1547379732526" duration="2682000" />
+      <workItem from="1547379732526" duration="3419000" />
+      <workItem from="1547430872942" duration="585000" />
+      <workItem from="1547432594327" duration="3279000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -523,11 +577,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547382441224</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="v2.0.6:宠物系统60%">
+      <created>1547384508508</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1547384508508</updated>
+    </task>
+    <task id="LOCAL-00033" summary="v2.0.6:宠物系统65%">
+      <created>1547384536999</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1547384536999</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364656000" />
+    <option name="totallyTimeSpent" value="369257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,10 +607,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49866667" visible="true" weight="0.24054463" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49866667" visible="true" weight="0.24810892" />
       <window_info id="Structure" order="1" sideWeight="0.50133336" side_tool="true" weight="0.33736762" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -552,7 +620,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26065573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33770493" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -680,20 +748,10 @@
     <MESSAGE value="v2.0.5:暂时禁止了新用户注册功能" />
     <MESSAGE value="v2.0.6:宠物系统50%" />
     <MESSAGE value="v2.0.6:宠物系统60%" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0.6:宠物系统60%" />
+    <MESSAGE value="v2.0.6:宠物系统65%" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0.6:宠物系统65%" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/games/plane/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/test.html" />
     <entry file="file://$PROJECT_DIR$/public/files/accounts.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -713,13 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DaoIndexData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1329">
-          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -988,13 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/DaoLoveRecords.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/zone.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1115,19 +1159,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/qqq.js" />
-    <entry file="file://$PROJECT_DIR$/routes/DaoUsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#70#158#0" />
-            <element signature="e#260#577#0" />
-            <element signature="e#641#988#0" />
-            <element signature="e#1051#1398#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1648">
@@ -1235,15 +1266,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="720">
           <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DaoIndexData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DaoUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#260#577#0" />
+            <element signature="e#641#988#0" />
+            <element signature="e#1051#1398#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/DaoLoveRecords.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/RouterPet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+        <state relative-caret-position="1060">
+          <caret line="65" column="49" lean-forward="true" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
           <folding>
             <element signature="e#1993#3145#0" />
           </folding>
@@ -1252,15 +1316,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/DaoPet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state relative-caret-position="80">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#354#558#0" />
+            <element signature="e#375#446#0" />
+            <element signature="e#451#548#0" />
+            <element signature="e#621#923#0" />
+            <element signature="e#712#916#0" />
+            <element signature="e#733#804#0" />
+            <element signature="e#809#906#0" />
+            <element signature="e#1002#1973#0" />
+            <element signature="e#1042#1514#0" />
+            <element signature="e#1307#1503#0" />
+            <element signature="e#1332#1415#0" />
+            <element signature="e#1420#1489#0" />
+            <element signature="e#1519#1967#0" />
+            <element signature="e#1760#1956#0" />
+            <element signature="e#1785#1868#0" />
+            <element signature="e#1873#1942#0" />
+            <element signature="e#2030#2302#0" />
+            <element signature="e#2127#2295#0" />
+            <element signature="e#2148#2219#0" />
+            <element signature="e#2224#2285#0" />
+            <element signature="e#2377#2762#0" />
+            <element signature="e#2559#2755#0" />
+            <element signature="e#2584#2667#0" />
+            <element signature="e#2672#2741#0" />
+            <element signature="e#2826#3106#0" />
+            <element signature="e#2931#3099#0" />
+            <element signature="e#2952#3023#0" />
+            <element signature="e#3028#3089#0" />
+            <element signature="e#3171#3453#0" />
+            <element signature="e#3278#3446#0" />
+            <element signature="e#3299#3370#0" />
+            <element signature="e#3375#3436#0" />
+            <element signature="e#3518#3800#0" />
+            <element signature="e#3625#3793#0" />
+            <element signature="e#3646#3717#0" />
+            <element signature="e#3722#3783#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
+    <entry file="file://$PROJECT_DIR$/routes/MysqlConnect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1741">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        <state relative-caret-position="180">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>

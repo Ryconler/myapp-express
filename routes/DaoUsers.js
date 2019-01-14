@@ -1,13 +1,10 @@
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'myapp'
-});
-connection.connect();
+var mc=require('./MysqlConnect')
+
+
 
 function DaoUsers() {
+    var connection=mc.conn
+
     this.retrieveUser = function (username, callback) {
         connection.query("SELECT * FROM user WHERE U_USERNAME=?", username, function (err, result) {
             if (err) {

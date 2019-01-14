@@ -1,14 +1,9 @@
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'myapp'
-});
+var mc=require('./MysqlConnect')
 
-connection.connect();
 
 function daoLoveRecords() {
+    var connection=mc.conn
+
     this.retrieveRecords = function (callback) {
         connection.query('SELECT * FROM love_record ORDER BY LR_ORDER_DATE DESC', function (err, results) {
             if (err) {

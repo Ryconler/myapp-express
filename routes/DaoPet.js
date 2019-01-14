@@ -1,14 +1,9 @@
-var mysql = require('mysql');
+var mc=require('./MysqlConnect')
 
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'myapp'
-});
-connection.connect();
 
 function DaoPet() {
+    var connection=mc.conn
+
     //根据主人ID获得宠物所有信息
     this.getPet=function (u_id,callback) {
         connection.query("SELECT * FROM pet WHERE U_ID=?",u_id,function (err,result) {
