@@ -33,7 +33,14 @@ $(function () {
         location.href="/users/zone"
     })
     //我的消息
-    $("#message").click(function () {
-        alert("小哥哥正在努力开发中...\n小提示：长按返回可直接回到首页哦")
+    $("#pk").click(function () {
+        var username=prompt("输入宠物主人的用户名")
+        if(username!==""){
+            location.href="/pk/enemy/"+username
+        }else {
+            alert("不能为空哦")
+        }
+        // alert("小哥哥正在努力开发中...\n小提示：长按返回可直接回到首页哦")
+
     })
 })

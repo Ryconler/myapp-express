@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    width: 100%;
+
+}
+
+.title h1 {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-family: "隶书";
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background: #e0e0e0;
+}
+
+.container .hp {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+}
+.container .hp progress {
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 100%;
+}
+.container .hp progress:last-child {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.container .hp span {
+    z-index: 10;
+    font-size: 0.8rem;
+    display: block;
+    height: 100%;
+    position: absolute;
+}
+.container .hp span:nth-child(2) {
+    left: 40%;
+}
+.container .hp span:nth-child(3) {
+    right: 40%;
+}
+
+.container .pet{
+    position: relative;
+    width: 100%;
+    height: 8rem;
+}
+.container .pet .me,.enemy{
+    position: absolute;
+    width:50%;
+    height: 100%;
+    /*background: #e38d13;*/
+}
+.container .pet .me{
+    left: 0;
+}
+.container .pet .enemy{
+    right: 0;
+}
+.container .pet canvas{
+    display: block;
+    width: 6rem;
+    height:6rem;
+    margin: 1rem auto;
+}
+.container .damage{;
+    position: absolute;
+    top: 3rem;
+    font-size: 0.8rem;
+    color: #e3a543;
+}
+.container .damage.m-damage{
+    left: 40%;
+}
+.container .damage.e-damage{
+    right: 40%;
+}
+.container .property{
+    position: relative;
+    width: 100%;
+    height: 1rem;
+}
+.container .property p{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.container .property p:first-child{
+    text-align: left;
+    left: 0;
+}
+.container .property p:last-child{
+    text-align: right;
+    right: 0;
+}
+.container .property p span{
+    margin: 0 0.3rem;
+}
+
+
+.operation{
+    width: 100%;
+    text-align: center;
+}
+.operation .begin{
+    display: inline-block;
+    width: 40%;
+    height: 2rem;
+}
+.operation a{
+    display: block;
+    font-size: 0.8rem;
+    color: #333;
+}

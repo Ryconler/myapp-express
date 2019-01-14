@@ -16,6 +16,18 @@ function DaoPet() {
             }
         })
     }
+    //根据主人用户名获得宠物所有信息
+    this.getPetByUsername=function (username,callback) {
+        connection.query("SELECT * FROM pet WHERE U_ID=(SELECT U_ID FROM user WHERE U_USERNAME=?)",[username],function (err,result) {
+            if(err){
+                console.log(err)
+                return
+            }else {
+                // console.log(result)
+                callback&&callback(result)
+            }
+        })
+    }
     //获得宠物经验值
     this.getExp=function (u_id,callback) {
         connection.query("SELECT P_EXP FROM pet WHERE U_ID=?",u_id,function (err,result) {
@@ -114,5 +126,5 @@ function DaoPet() {
     }
 
 }
-// new DaoPet().addPro(100,0,0,0,1)
+// new DaoPet().getPetByUsername("1")
 module.exports=DaoPet

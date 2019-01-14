@@ -8,7 +8,7 @@ $(function () {
     //设置画布大小，并非实际显示大小，默认300*150
     canvas.width=720
     canvas.height=400
-    //设置canvas画面要显示的大小，但实际还是上面设置的720*400
+    //设置canvas画面要显示的大小，但画布还是上面设置的720*400
     $("#canvas").css({width:720*p+"px",height:400*p+"px"})
 
 
