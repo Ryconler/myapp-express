@@ -34,7 +34,7 @@ $(function () {
     })
     //我的消息
     $("#pk").click(function () {
-        var username=prompt("输入宠物主人的用户名")
+        var username=prompt("输入要挑战的宠物主人的用户名")
         if(username!==""){
             location.href="/pk/enemy/"+username
         }else {
