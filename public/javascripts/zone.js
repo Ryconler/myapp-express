@@ -5,7 +5,7 @@ $(function () {
         editType=0
         $(".editcontent").css({display:"block"})
         $(".editcontent .info").text("新用户名")
-        $(".editcontent .tip").text("小提示：用户名可以是中文哦！")
+        $(".editcontent .tip").text("中文用户名暂时不支持宠物PK哦！")
     })
     $("#edit_password").click(function () {
         editType=1
