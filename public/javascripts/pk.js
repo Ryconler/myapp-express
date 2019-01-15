@@ -1,15 +1,19 @@
 $(function () {
-    var myName = $(".title h1 span:first-child")
+
+
     var myHpProg = $(".hp progress:first-child")
     var myHpInfo = $(".hp span:nth-child(2)")
     var myPet = $(".pet .me")
-    var mDamage = $(".damage.m-damage")
-    var enemyName = $(".title h1 span:last-child")
+
     var enemyHpProg = $(".hp progress:last-child")
     var enemyHpInfo = $(".hp span:nth-child(3)")
     var enemyPet = $(".pet .enemy")
-    var eDamage = $(".damage.e-damage")
 
+    var isNull=enemyHpInfo.text()
+    if(isNull==="n"){
+        alert("该用户不存在")
+        history.go(-1)
+    }
     //画宠物
     function initCanvas() {
         var mc = document.getElementById('mc');
@@ -124,66 +128,19 @@ $(function () {
     drawMyPet()
     drawEnemyPet()
 
-    //获取并设置宠物属性
-    function getPets() {
-        var pathname = location.pathname.split('/')
-        var username = pathname[pathname.length - 1]
-
-        $.post("/pk/getPets", {username: username}, function (res, err) {
-            if(res==="error"){
-                alert("内部错误")
-                history.go(-1)
-            }
-            else if (Object.keys(res).length === 2) {
-                var mPet = res.mPet
-                var ePet = res.ePet
-                if (mPet.P_EXP < 100) {
-                    alert("你的宠物还是个蛋哦，不能参加PK")
-                    history.go(-1)
-                } else if (ePet.P_EXP < 100) {
-                    alert("对方宠物还是个蛋哦，不能参加PK")
-                    history.go(-1)
-                } else {
-                    var mname = mPet.P_NAME
-                    var mhp = mPet.P_HP
-                    var mpower = mPet.P_POWER
-                    var mspeed = mPet.P_SPEED
-                    var mtalent = mPet.P_TALENT
-                    var ename = ePet.P_NAME
-                    var ehp = ePet.P_HP
-                    var epower = ePet.P_POWER
-                    var espeed = ePet.P_SPEED
-                    var etalent = ePet.P_TALENT
-                    myName.text(mname)
-                    myHpProg.attr({max: mhp, value: mhp})
-                    myHpInfo.text(mhp)
-                    enemyName.text(ename)
-                    enemyHpProg.attr({max: ehp, value: ehp})
-                    enemyHpInfo.text(ehp)
-                    $(".property p:first-child span:nth-child(1)").text("力量:" + mpower)
-                    $(".property p:first-child span:nth-child(2)").text("速度:" + mspeed)
-                    $(".property p:first-child span:nth-child(3)").text("天赋:" + mtalent)
-                    $(".property p:last-child span:nth-child(1)").text("力量:" + epower)
-                    $(".property p:last-child span:nth-child(2)").text("速度:" + espeed)
-                    $(".property p:last-child span:nth-child(3)").text("天赋:" + etalent)
-                    $(".operation .begin").text("开始")
-                    $(".operation .begin").click(function () {
-                        $(this).off("click")
-                        $(this).remove()
-                        battle(mhp, mpower, mspeed, mtalent, ehp, epower, espeed, etalent)
-                    })
-                }
-            } else {
-                alert("该用户不存在")
-                history.go(-1)
-            }
-        })
-
-
-    }
-
-    getPets()
-
+    $(".operation .begin").click(function () {
+        $(this).off("click")
+        $(this).hide()
+        var mhp = parseInt(myHpInfo.text())
+        var mpower = parseInt($(".property p:first-child span:nth-child(2)").text())
+        var mspeed = parseInt($(".property p:first-child span:nth-child(4)").text())
+        var mtalent = parseInt($(".property p:first-child span:nth-child(6)").text())
+        var ehp = enemyHpInfo.text()
+        var epower = parseInt($(".property p:last-child span:nth-child(2)").text())
+        var espeed = parseInt($(".property p:last-child span:nth-child(4)").text())
+        var etalent = parseInt($(".property p:last-child span:nth-child(6)").text())
+        battle(mhp, mpower, mspeed, mtalent, ehp, epower, espeed, etalent)
+    })
     //战斗
     function battle(mhp, mpower, mspeed, mtalent, ehp, epower, espeed, etalent) {
         var current_mhp = mhp  //我的当前血量

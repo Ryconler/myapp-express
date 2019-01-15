@@ -10,8 +10,8 @@
 <script>
     var count = 0
     var text = document.getElementById("text")
-    var name = prompt("请输入姓名，我们将为您清除2018年积攒一年的霉运。")
-    if (name != "null") {
+    var name = prompt("请输入姓名，我们将为您清除2018年积攒一年的霉运。","")
+    if (name!==null) {
         var is = confirm("您需要同时给2019年带来一年的好运吗？")
         var pg = document.getElementById('pg');
         text.innerHTML = "霉运清除中。。。"
@@ -37,6 +37,8 @@
                 }
             }
         }, 50);
+    }else {
+
     }
 </script>
 </body>

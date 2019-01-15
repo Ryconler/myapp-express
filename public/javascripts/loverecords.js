@@ -60,7 +60,7 @@ $(function () {
         if (content == "") {
             alert("内容不能为空")
         } else {
-            $.post("/love/postRecords", {content: content, year: year, month: month, day: day}, function (res) {
+            $.post("/love/createRecord", {content: content, year: year, month: month, day: day}, function (res) {
                 if(res=="success"){
                     alert("发布成功！")
                     $(".alert_input").css({display: "none"})

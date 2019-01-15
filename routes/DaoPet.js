@@ -18,25 +18,26 @@ function DaoPet() {
     }
     //根据主人用户名获得宠物所有信息
     this.getPetByUsername=function (username,callback) {
-        connection.query("SELECT * FROM pet WHERE U_ID=(SELECT U_ID FROM user WHERE U_USERNAME=?)",[username],function (err,result) {
+        connection.query("SELECT U_ID FROM user WHERE U_USERNAME=?",[username],function (err,user) {
             if(err){
                 console.log(err)
                 return
             }else {
-                // console.log(result)
-                callback&&callback(result)
-            }
-        })
-    }
-    //获得宠物经验值
-    this.getExp=function (u_id,callback) {
-        connection.query("SELECT P_EXP FROM pet WHERE U_ID=?",u_id,function (err,result) {
-            if(err){
-                console.log(err)
-                return
-            }else {
-                // console.log(result)
-                callback&&callback(result)
+                // console.log(user)
+                if(user.length!==0){
+                    connection.query("SELECT * FROM pet WHERE U_ID=?",[user[0].U_ID],function (err,pet) {
+                        if(err){
+                            console.log(err)
+                            return
+                        }else{
+                            // console.log(pet)
+                            callback&&callback(pet)
+                        }
+                    })
+                }else {
+                    callback&&callback([])
+                }
+
             }
         })
     }
@@ -124,7 +125,16 @@ function DaoPet() {
             }
         })
     }
-
+    //更新宠物名
+    this.updateName=function (name,u_id,callback) {
+        connection.query("UPDATE pet SET P_NAME=? WHERE U_ID=?",[name,u_id],function (err) {
+            if(err){
+                console.log(err)
+                return
+            }else {
+                callback&&callback("success")
+            }
+        })
+    }
 }
-// new DaoPet().getPetByUsername("1")
 module.exports=DaoPet

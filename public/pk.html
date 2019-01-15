@@ -14,17 +14,17 @@
 <body>
 <div class="title">
     <h1>
-        <span></span>
+        <span><%=mPet.P_NAME %></span>
         <span>VS</span>
-        <span></span>
+        <span><%=ePet.P_NAME %></span>
     </h1>
 </div>
 <div class="container">
     <div class="hp">
-        <progress max="100" value="0"></progress>
-        <span>0</span>
-        <span>0</span>
-        <progress max="100" value="0"></progress>
+        <progress max="<%=mPet.P_HP %>" value="<%=mPet.P_HP %>"></progress>
+        <span><%=mPet.P_HP %></span>
+        <span><%=ePet.P_HP %></span>
+        <progress max="<%=ePet.P_HP %>" value="<%=ePet.P_HP %>"></progress>
     </div>
     <div class="pet">
         <div class="me">
@@ -37,13 +37,21 @@
     <!--<div class="damage m-damage">-30</div>-->
     <!--<div class="damage e-damage">-30</div>-->
     <div class="property">
-        <p><span>力量:</span><span>速度:</span><span>天赋:</span></p>
-        <p><span>力量:</span><span>速度:</span><span>天赋:</span></p>
+        <p>
+            <span>力量:</span><span><%=mPet.P_POWER %></span>
+            <span>速度:</span><span><%=mPet.P_SPEED %></span>
+            <span>天赋:</span><span><%=mPet.P_TALENT %></span>
+        </p>
+        <p>
+            <span>力量:</span><span><%=ePet.P_POWER %></span>
+            <span>速度:</span><span><%=ePet.P_SPEED %></span>
+            <span>天赋:</span><span><%=ePet.P_TALENT %></span>
+        </p>
     </div>
 </div>
 <div class="operation">
-    <button class="begin">系统内部出错，请重新进入该页面</button>
-    <a href="/users/zone">返回我的空间</a>
+    <button class="begin">开始</button>
+    <a href="/user/zone">返回我的空间</a>
 </div>
 </body>
 </html>

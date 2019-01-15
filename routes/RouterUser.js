@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var LoveRecords = require('./DaoLoveRecords')
-var User = require('./DaoUsers')
+var LoveRecord = require('./DaoLoveRecord')
+var User = require('./DaoUser')
 
 router.get('/login', function (req, res) {
     var u = new User()
@@ -23,7 +23,7 @@ router.get('/zone',function (req,res) {
     var u=new User()
     u.isLogin(req,res,function (result) {
         if (result == "yes") {
-            var lr=new LoveRecords()
+            var lr=new LoveRecord()
             lr.retrieveRecordsByUid(req.session.user.id,function (results) {
                 res.render('zone',{data:results,user:req.session.user})
             })
@@ -70,17 +70,34 @@ router.post('/createUser', function (req, res) {
     res.send("forbid")
 })
 router.post('/updateUser',function (req,res) {
-    var uid=req.session.user.id
-    var username=req.session.user.username
-    var password=req.session.user.password
-    var updateType=req.body.type
-    var updateValue=req.body.value
-    var u = new User()
-    if(updateType==="username"){  //更改用户名
-        //检查用户名是否存在
-        u.retrieveUser(updateValue,function (result) {
-            if(result.length===0){  //不存在，可以更改
-                u.updateUser(uid,updateValue,password,function (result) {
+    new User().isLogin(req,res,function (result) {
+        if (result === "yes") {
+            var uid=req.session.user.id
+            var username=req.session.user.username
+            var password=req.session.user.password
+            var updateType=req.body.type
+            var updateValue=req.body.value
+            var u = new User()
+            if(updateType==="username"){  //更改用户名
+                //检查用户名是否存在
+                u.retrieveUser(updateValue,function (result) {
+                    if(result.length===0){  //不存在，可以更改
+                        u.updateUser(uid,updateValue,password,function (result) {
+                            if(result==="success"){
+                                delete req.session.user
+                                res.clearCookie("user");
+                                res.send("success")
+                            }else {
+                                res.send("error")
+                            }
+                        })
+                    }else {  //存在，不可以更改
+                        res.send("existed")
+                    }
+                })
+
+            }else if(updateType==="password"){  //更改密码
+                u.updateUser(uid,username,updateValue,function (result) {
                     if(result==="success"){
                         delete req.session.user
                         res.clearCookie("user");
@@ -89,23 +106,13 @@ router.post('/updateUser',function (req,res) {
                         res.send("error")
                     }
                 })
-            }else {  //存在，不可以更改
-                res.send("existed")
-            }
-        })
-
-    }else if(updateType==="password"){  //更改密码
-        u.updateUser(uid,username,updateValue,function (result) {
-            if(result==="success"){
-                delete req.session.user
-                res.clearCookie("user");
-                res.send("success")
             }else {
                 res.send("error")
             }
-        })
-    }else {
-        res.send("error")
-    }
+        }else {
+            res.render('login')
+        }
+    })
+
 })
 module.exports = router;

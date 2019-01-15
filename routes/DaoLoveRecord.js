@@ -1,7 +1,7 @@
 var mc=require('./MysqlConnect')
 
 
-function daoLoveRecords() {
+function DaoLoveRecord() {
     var connection=mc.conn
 
     this.retrieveRecords = function (callback) {
@@ -26,7 +26,7 @@ function daoLoveRecords() {
             }
         })
     }
-    this.createRecords = function (content, year, month, day, order_date,u_id, callback) {
+    this.createRecord = function (content, year, month, day, order_date,u_id, callback) {
         connection.query('INSERT INTO love_record(LR_CONTENT,LR_YEAR,LR_MONTH,LR_DAY,LR_ORDER_DATE,U_ID) VALUES(?,?,?,?,?,?)', [content, year, month, day, order_date,u_id], function (err, result) {
             if (err) {
                 console.log('[INSERT ERROR] - ', err.message);
@@ -40,5 +40,5 @@ function daoLoveRecords() {
 
 }
 
-// new daoLoveRecords().retrieveRecordsByUid(1)
-module.exports = daoLoveRecords
+// new daoLoveRecord().retrieveRecordsByUid(1)
+module.exports = DaoLoveRecord

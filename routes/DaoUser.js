@@ -2,7 +2,7 @@ var mc=require('./MysqlConnect')
 
 
 
-function DaoUsers() {
+function DaoUser() {
     var connection=mc.conn
 
     this.retrieveUser = function (username, callback) {
@@ -44,7 +44,7 @@ function DaoUsers() {
         var userSession = req.session.user
         var userCookie = req.cookies.user
         if (userSession) {
-            console.log(userSession)
+            console.log("当前用户:"+userSession.username)
             callback && callback("yes")
         } else {
             if (userCookie) {
@@ -54,7 +54,7 @@ function DaoUsers() {
                     }else {
                         if (result[0].U_PASSWORD === userCookie.password) {
                             req.session.user = {username:result[0].U_USERNAME,id:result[0].U_ID,password:result[0].U_PASSWORD}
-                            console.log(req.session.user)
+                            console.log("当前用户:"+req.session.user.username)
                             callback && callback("yes")
                         } else {
                             // res.render('login')
@@ -72,5 +72,5 @@ function DaoUsers() {
     }
 }
 
-// new DaoUsers().updateUser(1,"朱星杰","123456")
-module.exports = DaoUsers
+// new DaoUser().updateUser(1,"朱星杰","123456")
+module.exports = DaoUser

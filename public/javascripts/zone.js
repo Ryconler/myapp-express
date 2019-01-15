@@ -5,7 +5,7 @@ $(function () {
         editType=0
         $(".editcontent").css({display:"block"})
         $(".editcontent .info").text("新用户名")
-        $(".editcontent .tip").text("中文用户名暂时不支持宠物PK哦！")
+        $(".editcontent .tip").text("小提示：用户名现在可以取中文了哦！")
     })
     $("#edit_password").click(function () {
         editType=1
@@ -29,7 +29,7 @@ $(function () {
                 if(content.length>10){
                     alert("用户名长度不能超过10哦！")
                 }else {
-                    $.post("/users/updateUser",{type:"username",value:content},function (res) {
+                    $.post("/user/updateUser",{type:"username",value:content},function (res) {
                         if(res==="success"){
                             alert("更改成功，请重新登录")
                             location.reload()
@@ -44,7 +44,7 @@ $(function () {
                 if(content.length>20){
                     alert("密码长度不能超过20哦！")
                 }else {
-                    $.post("/users/updateUser",{type:"password",value:content},function (res) {
+                    $.post("/user/updateUser",{type:"password",value:content},function (res) {
                         if(res==="success"){
                             alert("更改成功，请重新登录")
                             location.reload()
@@ -58,7 +58,29 @@ $(function () {
         }
     })
 
-    // var subwidth=
-    // $(".pet_content iframe").css({transform:"scale(0.7,0.7)"})
+    $.get("/pet/mypet",function (res) {
+        if(res!=="error"){
+            $(".profile_content p:last-child em").text(res.P_NAME)
+        }else {
+            alert("内部错误")
+        }
+    })
+    $("#edit_petname").click(function () {
+        var name=prompt("请输入要更改的宠物名","")
+        if(name!==null){
+            if(name.trim()===""){
+                alert("不能为空哦")
+            }else {
+                $.post("/pet/updatePetName",{name:name},function (res) {
+                    if(res==="success"){
+                        alert("更改成功")
+                        location.reload()
+                    }else {
+                        alert("更改失败")
+                    }
+                })
+            }
+        }else {}
+    })
 
 })

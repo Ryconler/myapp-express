@@ -10,7 +10,7 @@ $(function () {
         } else if(password.length>20){
             $(".login-txt").text("密码长度不能超过20哦")
         }else {
-            $.post("/users/retrieveUser", {username: username, password: password}, function (res) {
+            $.post("/user/retrieveUser", {username: username, password: password}, function (res) {
                 if (res == "success") {
                     $(".login-txt").text("登录成功")
                     window.location.href = "/love/records"
@@ -18,7 +18,7 @@ $(function () {
                     $(".login-txt").text("密码错误")
                 } else if (res == "empty") {
                     $(".login-txt").text("账号不存在，正在为您创建账号...")
-                    $.post("/users/createUser", {username: username, password: password}, function (res) {
+                    $.post("/user/createUser", {username: username, password: password}, function (res) {
                         if (res == "success") {
                             $(".login-txt").text("创建成功，正在为您跳转...")
                             window.location.href = "/love/records"

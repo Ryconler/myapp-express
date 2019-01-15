@@ -6,7 +6,7 @@ var session = require('express-session');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/RouterIndex');
-var usersRouter = require('./routes/RouterUsers');
+var userRouter = require('./routes/RouterUser');
 var otherRouter = require('./routes/RouterOther');
 var loveRouter = require('./routes/RouterLove');
 var petRouter = require('./routes/RouterPet');
@@ -36,7 +36,7 @@ app.use(session({
 
 //自定义路由
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/user', userRouter);
 app.use('/other', otherRouter);
 app.use('/love', loveRouter);
 app.use('/pet', petRouter);

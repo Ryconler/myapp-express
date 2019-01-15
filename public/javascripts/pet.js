@@ -229,52 +229,53 @@ $(function () {
     }
     /* 加载宠物模块 */
     $.get("/pet/mypet",function (res) {
-        //四个属性值设置
-        $(".property p").eq(0).children().last().text(res.P_HP)
-        $(".property p").eq(1).children().last().text(res.P_POWER)
-        $(".property p").eq(2).children().last().text(res.P_SPEED)
-        $(".property p").eq(3).children().last().text(res.P_TALENT)
-
-        //经验条设置
-        var exp=res.P_EXP  //总经验
-        var level=exp2level(exp) //当前等级
-        $(".level_info_wrap span").eq(0).text("等级"+level)
-        $(".level_info_wrap span").eq(1).text("等级"+(level+1))
-        for(var i=0;i<maxExp.length;i++){
-            if(exp<levelExp[i]){
-                // console.log(exp-levelExp[i-1])
-                $("#level").attr({value:exp-levelExp[i-1],max:maxExp[i]})  //根据经验设置进度条的值
-                break
+        if(res!=="error"){
+            //四个属性值设置
+            $(".property p").eq(0).children().last().text(res.P_HP)
+            $(".property p").eq(1).children().last().text(res.P_POWER)
+            $(".property p").eq(2).children().last().text(res.P_SPEED)
+            $(".property p").eq(3).children().last().text(res.P_TALENT)
+            //经验条设置
+            var exp=res.P_EXP  //总经验
+            var level=exp2level(exp) //当前等级
+            $(".level_info_wrap span").eq(0).text("等级"+level)
+            $(".level_info_wrap span").eq(1).text("等级"+(level+1))
+            for(var i=0;i<maxExp.length;i++){
+                if(exp<levelExp[i]){
+                    // console.log(exp-levelExp[i-1])
+                    $("#level").attr({value:exp-levelExp[i-1],max:maxExp[i]})  //根据经验设置进度条的值
+                    break
+                }
             }
-        }
-        //达到最大等级
-        if(level===10){
-            $(".level_info_wrap span").eq(1).text("最大等级")
-            $("#level").attr({value:100,max:100})  //根据经验设置进度条的值
-        }
-        //0级为宠物蛋
-        if(level===0){
-            //重画宠物蛋
-            drawEgg()
-            //添加点我孵化按钮
-            $(".pet_content").append("<div class='hatch'>点我孵化</div>")
-            //孵化
-            $(".pet_content .hatch").click(function () {
-                $.post("/pet/addExpByHatch",{exp:50},function (res) {
-                    if(res==="success"){
-                        alert("孵化成功，经验+50")
-                        location.reload()
-                    }else if(res==="error_level"){
-                        alert("你的宠物现在已经不是蛋咯")
-                    }else if(res==="error_num"){
-                        alert("每日孵化次数已达上限")
-                    }else {
-                        alert("内部错误")
-                    }
+            //达到最大等级
+            if(level===10){
+                $(".level_info_wrap span").eq(1).text("最大等级")
+                $("#level").attr({value:100,max:100})  //根据经验设置进度条的值
+            }
+            //0级为宠物蛋
+            if(level===0){
+                //重画宠物蛋
+                drawEgg()
+                //添加点我孵化按钮
+                $(".pet_content").append("<div class='hatch'>点我孵化</div>")
+                //孵化
+                $(".pet_content .hatch").click(function () {
+                    $.post("/pet/addExpByHatch",{exp:50},function (res) {
+                        if(res==="success"){
+                            alert("孵化成功，经验+50")
+                            location.reload()
+                        }else if(res==="error_level"){
+                            alert("你的宠物现在已经不是蛋咯")
+                        }else if(res==="error_num"){
+                            alert("每日孵化次数已达上限")
+                        }else {
+                            alert("内部错误")
+                        }
+                    })
                 })
-            })
-        }else {
-            drawPet()
+            }else {
+                drawPet()
+            }
         }
     })
     //喂食
