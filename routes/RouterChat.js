@@ -5,13 +5,7 @@ var User=require('./DaoUser')
 var router = express.Router();
 
 router.get('/chatroom',function (req,res) {
-    new User().isLogin(req,res,function (result) {
-        if(result==="yes"){
-            res.render('chatroom')
-        }else {
-            res.redirect("/user/login")
-        }
-    })
+    res.render('chatroom')
 })
 router.get('/me',function (req,res) {
     new User().isLogin(req,res,function (result) {

@@ -23,8 +23,9 @@ var server = http.createServer(app);
 
 var io = require('socket.io')(server)
 io.on('connection', function (socket) {
-    socket.on('chat', function (data) {  //接收数据
-        socket.emit('chat', data);   //广播数据
+    socket.on('send', function (data) {  //接收数据
+        console.log(data)
+        socket.emit('new', data);   //广播数据
     });
 })
 /**
