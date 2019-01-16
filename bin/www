@@ -7,7 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('myapp:server');
 var http = require('http');
-
+var io = require('../routes/SocketIO')
 /**
  * Get port from environment and store in Express.
  */
@@ -20,15 +20,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-
-var io = require('socket.io')(server)
-io.on('connection', function (socket) {
-    socket.on('send', function (data) {  //接收数据
-        console.log(data)
-        socket.emit('new', data);
-        socket.broadcast.emit('new', data);   //广播数据
-    });
-})
+io.getSocketIO(server);   //socket io
 /**
  * Listen on provided port, on all network interfaces.
  */

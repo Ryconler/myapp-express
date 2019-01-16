@@ -23,13 +23,21 @@
     top: 0;
     bottom: 3rem;
 }
-
 .content .wrap {
     width: 90%;
     margin: 0 auto;
     overflow: scroll;
 }
-
+.content .wrap>h1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    font-size: 1rem;
+    font-weight: normal;
+}
 .content .record {
     margin-top: 0.5rem;
     width: 100%;
@@ -39,29 +47,10 @@
     position: relative;
     height: 1rem;
     font-size: 0.8rem;
-}
-
-.content .record p:last-child span:first-child {
-    display: block;
-    width: 60%;
-    height: 100%;
-    color: #d58512;
-    position: absolute;
-    left: 0;
-}
-
-.content .record p:last-child span:last-child {
-    display: block;
-    height: 100%;
-    width: 40%;
     text-align: right;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: #4f63d5;
-    position: absolute;
-    right: 0;
+    color: #e38d13;
 }
+
 
 
 .input {
