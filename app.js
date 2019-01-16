@@ -11,6 +11,7 @@ var otherRouter = require('./routes/RouterOther');
 var loveRouter = require('./routes/RouterLove');
 var petRouter = require('./routes/RouterPet');
 var pkRouter = require('./routes/RouterPK');
+var gameRouter = require('./routes/RouterGame');
 
 var app = express();
 
@@ -41,6 +42,7 @@ app.use('/other', otherRouter);
 app.use('/love', loveRouter);
 app.use('/pet', petRouter);
 app.use('/pk', pkRouter);
+app.use('/game', gameRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

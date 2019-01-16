@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .wrap h1{
+            width: 100%;
+            height: 20%;
+        }
+        .enemy {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 20%;
+        }
+
+        .me {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20%;
+        }
+
+        .num {
+            position: absolute;
+            bottom: 0;
+            background: #2aabd2;
+
+            font-size: 40px;
+            width: 30%;
+            height: 80%;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="cwrap">
+        <div class="enemy">
+            <div class="wrap">
+                <h1><%=gamers[0].username %></h1>
+                <div class="num left">1</div>
+                <div class="num right">1</div>
+            </div>
+
+        </div>
+        <div class="me">
+            <div class="wrap">
+                <h1>等待对方加入。。。</h1>
+                <div class="num left">1</div>
+                <div class="num right">1</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        function getGamers() {
+            $.get("/game/gamers",function (res) {
+                var gamer1=res[0]
+                var gamer2=res[1]
+                if(JSON.stringify(gamer1)!=="{}"&&JSON.stringify(gamer2)!=="{}"){
+                    $(".enemy h1").text(gamer1.username)
+                    $(".me h1").text(gamer2.username)
+                    clearInterval(t)
+                }
+            })
+        }
+        getGamers()
+        var t=setInterval(function () {
+            getGamers()
+        },1000)
+    })
+</script>
+</body>
+</html>
