@@ -10,7 +10,7 @@ $(function () {
         }else {
             $(".input input").val("")
             var d = new Date()
-            var date =d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+            var date = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
             socket.emit('send', {content: text, date: date});
         }
     })
