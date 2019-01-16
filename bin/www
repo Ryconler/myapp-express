@@ -25,7 +25,8 @@ var io = require('socket.io')(server)
 io.on('connection', function (socket) {
     socket.on('send', function (data) {  //接收数据
         console.log(data)
-        socket.emit('new', data);   //广播数据
+        socket.emit('new', data);
+        socket.broadcast.emit('new', data);   //广播数据
     });
 })
 /**

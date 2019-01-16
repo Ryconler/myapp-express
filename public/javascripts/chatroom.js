@@ -1,7 +1,7 @@
 $(function () {
     //获取本人信息
     $.get("/chat/me", function (res) {
-        var socket = io.connect('http://localhost:3000');
+        var socket = io.connect('http://111.231.200.245:3000');
         socket.on('new', function (data) {   //接受数据
             // alert(data.content)
             updateData(data)
