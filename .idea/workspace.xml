@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59aab8df-c485-4f30-a254-006c37d2bfdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/plus1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/RouterGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/appindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/appindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/plus1.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/chatroom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/RouterGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/RouterChat.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,23 +21,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/RouterGame.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/RouterChat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="69">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/chatroom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/chatroom.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="28" column="15" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/chatroom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
-                <element signature="e#111#138#0" />
+                <element signature="e#209#217#0" />
+                <element signature="e#298#306#0" />
+                <element signature="e#376#384#0" />
+                <element signature="e#450#458#0" />
+                <element signature="e#523#531#0" />
+                <element signature="e#629#637#0" />
+                <element signature="e#207#215#0" />
+                <element signature="e#319#327#0" />
+                <element signature="e#319#327#0" />
+                <element signature="e#370#378#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/plus1.html">
+        <entry file="file://$PROJECT_DIR$/test/1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1955">
-              <caret line="5" column="108" selection-start-line="5" selection-start-column="108" selection-end-line="5" selection-end-column="108" />
+            <state relative-caret-position="46">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -43,8 +101,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -70,11 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/LoginScript.js" />
-        <option value="$PROJECT_DIR$/public/login.html" />
-        <option value="$PROJECT_DIR$/public/stylesheets/login.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/loveRecords.js" />
-        <option value="$PROJECT_DIR$/public/loveRecords.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/loveRecords.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/header.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/loverecords.css" />
@@ -88,7 +141,6 @@
         <option value="$PROJECT_DIR$/routes/qqq.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/pet.css" />
         <option value="$PROJECT_DIR$/public/petexplanation.html" />
-        <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/routes/Reconnect.js" />
         <option value="$PROJECT_DIR$/routes/MysqlConnect.js" />
         <option value="$PROJECT_DIR$/public/javascripts/pk.html" />
@@ -105,7 +157,6 @@
         <option value="$PROJECT_DIR$/public/deletebadluck.html" />
         <option value="$PROJECT_DIR$/public/javascripts/loverecords.js" />
         <option value="$PROJECT_DIR$/public/error.html" />
-        <option value="$PROJECT_DIR$/public/javascripts/login.js" />
         <option value="$PROJECT_DIR$/public/pet.html" />
         <option value="$PROJECT_DIR$/public/javascripts/pet.js" />
         <option value="$PROJECT_DIR$/public/loverecords.html" />
@@ -116,11 +167,18 @@
         <option value="$PROJECT_DIR$/public/javascripts/zone.js" />
         <option value="$PROJECT_DIR$/public/pk.html" />
         <option value="$PROJECT_DIR$/public/javascripts/pk.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/RouterOther.js" />
-        <option value="$PROJECT_DIR$/public/appindex.html" />
         <option value="$PROJECT_DIR$/public/plus1.html" />
         <option value="$PROJECT_DIR$/routes/RouterGame.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/login.js" />
+        <option value="$PROJECT_DIR$/public/appindex.html" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/routes/RouterChat.js" />
+        <option value="$PROJECT_DIR$/public/chatroom.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/chatroom.css" />
+        <option value="$PROJECT_DIR$/test/1.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/chatroom.js" />
       </list>
     </option>
   </component>
@@ -166,7 +224,19 @@
             <path>
               <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,7 +249,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547626531761" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547636152576" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -189,11 +259,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\IdeaProjects\myapp\public\javascripts" />
       <recent name="D:\Workspace\IdeaProjects\myapp\public" />
       <recent name="D:\Workspace\IdeaProjects\myapp\public\images" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\games\plane\images" />
       <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\games\plane\js" />
-      <recent name="C:\Users\Jesse\IdeaProjects\myapp\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspace\IdeaProjects\myapp\public" />
@@ -215,11 +285,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.www">
-    <configuration name="DaoPet.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/DaoPet.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.1.js">
+    <configuration name="1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/1.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="pet.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/public/javascripts/pet.js" working-dir="$PROJECT_DIR$">
+    <configuration name="DaoPet.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/DaoPet.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="qqq.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/qqq.js" working-dir="$PROJECT_DIR$">
@@ -234,17 +304,17 @@
     <list>
       <item itemvalue="Node.js.www" />
       <item itemvalue="Node.js.DaoPet.js" />
-      <item itemvalue="Node.js.pet.js" />
       <item itemvalue="Node.js.qqq.js" />
       <item itemvalue="Node.js.test.js" />
+      <item itemvalue="Node.js.1.js" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.www" />
+        <item itemvalue="Node.js.1.js" />
         <item itemvalue="Node.js.DaoPet.js" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.qqq.js" />
-        <item itemvalue="Node.js.pet.js" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +359,7 @@
       <workItem from="1547432594327" duration="30475000" />
       <workItem from="1547521857469" duration="11818000" />
       <workItem from="1547542670219" duration="4027000" />
-      <workItem from="1547622056647" duration="4915000" />
+      <workItem from="1547622056647" duration="12364000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -578,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547549865160</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="v2.1.2：点我加一小游戏">
+      <created>1547627000096</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1547627000096</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="417213000" />
+    <option name="totallyTimeSpent" value="424662000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,9 +673,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49866667" visible="true" weight="0.22919819" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965197" visible="true" weight="0.22919819" />
       <window_info id="Structure" order="1" sideWeight="0.50133336" side_tool="true" weight="0.33736762" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="npm" order="2" sideWeight="0.50348026" side_tool="true" weight="0.22919819" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -606,7 +683,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29344264" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39508197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -614,7 +691,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.39836067" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.20983607" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -684,7 +761,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="v1.0" />
     <MESSAGE value="v1.1" />
     <MESSAGE value="v1.2" />
     <MESSAGE value="v1.3" />
@@ -709,111 +785,10 @@
     <MESSAGE value="v2.0.9:PK页面优化" />
     <MESSAGE value="v2.1.0" />
     <MESSAGE value="v2.1.1：修复速度在战斗中未生效bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.1.1：修复速度在战斗中未生效bug" />
+    <MESSAGE value="v2.1.2：点我加一小游戏" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.1.2：点我加一小游戏" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/loverecordsbg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/recordsbg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/plogo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/loginbg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/appindex.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="200" column="7" lean-forward="true" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="7" />
-          <folding>
-            <element signature="e#2#72#0" />
-            <element signature="e#75#100#0" />
-            <element signature="e#102#149#0" />
-            <element signature="e#161#183#0" />
-            <element signature="e#191#213#0" />
-            <element signature="e#234#381#0" />
-            <element signature="e#396#456#0" />
-            <element signature="e#477#600#0" />
-            <element signature="e#696#871#0" />
-            <element signature="e#899#1130#0" />
-            <element signature="e#1160#1295#0" />
-            <element signature="e#1319#1353#0" />
-            <element signature="e#1387#1531#0" />
-            <element signature="e#1567#1595#0" />
-            <element signature="e#1596#1845#0" />
-            <element signature="e#1623#1665#0" />
-            <element signature="e#1673#1701#0" />
-            <element signature="e#1710#1755#0" />
-            <element signature="e#1763#1791#0" />
-            <element signature="e#1801#1843#0" />
-            <element signature="e#1870#1934#0" />
-            <element signature="e#1943#2105#0" />
-            <element signature="e#2121#2183#0" />
-            <element signature="e#2202#2241#0" />
-            <element signature="e#2262#2303#0" />
-            <element signature="e#2318#2422#0" />
-            <element signature="e#2440#2605#0" />
-            <element signature="e#2626#2654#0" />
-            <element signature="e#2672#2956#0" />
-            <element signature="e#2980#3053#0" />
-            <element signature="e#3077#3093#0" />
-            <element signature="e#3579#3686#0" />
-            <element signature="e#3698#3789#0" />
-            <element signature="e#3814#3838#0" />
-            <element signature="e#3852#3875#0" />
-            <element signature="e#3893#3932#0" />
-            <element signature="e#3949#4146#0" />
-            <element signature="e#4163#4251#0" />
-            <element signature="e#4272#4414#0" />
-            <element signature="e#4426#4513#0" />
-            <element signature="e#4526#4567#0" />
-            <marker date="1546656186022" expanded="false" signature="2677:2977" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/appindex_m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/appindex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding>
-            <marker date="1546655526751" expanded="false" signature="2894:2920" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/calcfontsize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -1009,13 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1228,24 +1196,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/pk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="139" column="31" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1256,10 +1210,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/socket.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io-client/dist/socket.io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/socket.io.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/appindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="184">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#1;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -1296,27 +1284,131 @@
             <element signature="n#a#0;n#li#1;n#ul#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#2;n#ul#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#a#0;n#li#2;n#ul#0;n#div#4;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#5995#6001#0" expanded="true" />
-            <element signature="e#6002#6008#0" expanded="true" />
-            <element signature="e#6023#6029#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/plus1.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/appindex.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1955">
-          <caret line="5" column="108" selection-start-line="5" selection-start-column="108" selection-end-line="5" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/RouterGame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-46">
+          <caret line="200" column="6" selection-start-line="200" selection-start-column="6" selection-end-line="200" selection-end-column="6" />
           <folding>
-            <element signature="e#111#138#0" />
+            <element signature="e#2#72#0" />
+            <element signature="e#75#100#0" />
+            <element signature="e#102#149#0" />
+            <element signature="e#161#183#0" />
+            <element signature="e#191#213#0" />
+            <element signature="e#234#381#0" />
+            <element signature="e#396#456#0" />
+            <element signature="e#477#600#0" />
+            <element signature="e#620#699#0" />
+            <element signature="e#717#892#0" />
+            <element signature="e#920#1151#0" />
+            <element signature="e#1181#1316#0" />
+            <element signature="e#1340#1374#0" />
+            <element signature="e#1408#1552#0" />
+            <element signature="e#1588#1616#0" />
+            <element signature="e#1617#1866#0" />
+            <element signature="e#1644#1686#0" />
+            <element signature="e#1694#1722#0" />
+            <element signature="e#1731#1776#0" />
+            <element signature="e#1784#1812#0" />
+            <element signature="e#1822#1864#0" />
+            <element signature="e#1891#1955#0" />
+            <element signature="e#1964#2126#0" />
+            <element signature="e#2142#2204#0" />
+            <element signature="e#2223#2262#0" />
+            <element signature="e#2283#2324#0" />
+            <element signature="e#2339#2443#0" />
+            <element signature="e#2461#2626#0" />
+            <element signature="e#2647#2675#0" />
+            <element signature="e#2693#2977#0" />
+            <element signature="e#3001#3074#0" />
+            <element signature="e#3098#3114#0" />
+            <element signature="e#3138#3155#0" />
+            <element signature="e#3163#3274#0" />
+            <element signature="e#3293#3416#0" />
+            <element signature="e#3435#3605#0" />
+            <element signature="e#3633#3638#0" />
+            <element signature="e#3657#3777#0" />
+            <element signature="e#3787#3894#0" />
+            <element signature="e#3906#3997#0" />
+            <element signature="e#4022#4046#0" />
+            <element signature="e#4060#4083#0" />
+            <element signature="e#4101#4140#0" />
+            <element signature="e#4157#4354#0" />
+            <element signature="e#4371#4459#0" />
+            <element signature="e#4480#4622#0" />
+            <element signature="e#4634#4721#0" />
+            <element signature="e#4734#4775#0" />
+            <marker date="1546656186022" expanded="false" signature="2677:2977" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/RouterChat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/chatroom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#209#217#0" />
+            <element signature="e#298#306#0" />
+            <element signature="e#376#384#0" />
+            <element signature="e#450#458#0" />
+            <element signature="e#523#531#0" />
+            <element signature="e#629#637#0" />
+            <element signature="e#207#215#0" />
+            <element signature="e#319#327#0" />
+            <element signature="e#319#327#0" />
+            <element signature="e#370#378#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/chatroom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/chatroom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
