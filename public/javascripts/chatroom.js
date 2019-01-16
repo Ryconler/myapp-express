@@ -1,4 +1,5 @@
 $(function () {
+
     var socket = io.connect('http://111.231.200.245:3000');
     // var socket = io.connect('http://localhost:3000');
     //点击发送数据
@@ -29,9 +30,11 @@ $(function () {
     })
     //更新数据
     function updateData(data) {
-        $(".content .wrap").prepend("<div class='record'><p>"
+        $(".content .wrap").append("<div class='record'><p>"
             +data.content +"</p><p>"
             +data.date +"</p></div> ")
+        //让内容滚动条始终最下方
+        $(".content .wrap").scrollTop($(".content .wrap")[0].scrollHeight)
     }
     //接收新消息
     socket.on('new', function (data) {
@@ -39,7 +42,7 @@ $(function () {
     });
     //接收在线人数信息
     socket.on('connectCount',function(count){
-        $(".content .wrap>h1").text("当前在线人数："+count)
+        $("h1").text("当前在线人数："+count)
     });
 
 })
