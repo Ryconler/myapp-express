@@ -1,7 +1,7 @@
 $(function () {
 
-    // var socket = io.connect('http://111.231.200.245:3000');
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://111.231.200.245:3000');
+    // var socket = io.connect('http://localhost:3000');
     //点击发送数据
     $(".input button").click(function () {
         var text = $(".input input").val().trim()
