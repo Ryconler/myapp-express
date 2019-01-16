@@ -58,20 +58,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/chatroom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="e#3#61#0" />
-                <element signature="e#49#141#0" />
                 <element signature="e#227#321#0" />
                 <element signature="e#235#423#0" />
+                <element signature="e#209#217#0" />
                 <element signature="e#298#306#0" />
                 <element signature="e#376#384#0" />
                 <element signature="e#450#458#0" />
-                <element signature="e#207#215#0" />
                 <element signature="e#319#327#0" />
-                <element signature="e#319#327#0" />
-                <element signature="e#370#378#0" />
               </folding>
             </state>
           </provider>
@@ -228,7 +225,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547644686631" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547644897071" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -338,7 +335,7 @@
       <workItem from="1547432594327" duration="30475000" />
       <workItem from="1547521857469" duration="11818000" />
       <workItem from="1547542670219" duration="4027000" />
-      <workItem from="1547622056647" duration="20946000" />
+      <workItem from="1547622056647" duration="21245000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1545279999010</created>
@@ -676,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547644586678</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="v2.1.4：聊天室更新">
+      <created>1547644728573</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1547644728573</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433244000" />
+    <option name="totallyTimeSpent" value="433543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1432,20 +1436,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/chatroom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="266">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="e#3#61#0" />
-            <element signature="e#49#141#0" />
             <element signature="e#227#321#0" />
             <element signature="e#235#423#0" />
+            <element signature="e#209#217#0" />
             <element signature="e#298#306#0" />
             <element signature="e#376#384#0" />
             <element signature="e#450#458#0" />
-            <element signature="e#207#215#0" />
             <element signature="e#319#327#0" />
-            <element signature="e#319#327#0" />
-            <element signature="e#370#378#0" />
           </folding>
         </state>
       </provider>
