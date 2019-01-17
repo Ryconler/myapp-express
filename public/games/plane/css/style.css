@@ -18,7 +18,7 @@ body {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-    left: 0;
+    left: 50%;
     top: 0;
     position: absolute;
     z-index: 10;
@@ -30,7 +30,7 @@ body {
     width: 2rem;
     height: 2rem;
     /*background: #8392ff;*/
-    left: 0;
+    left: 50%;
     bottom: 0;
     position: absolute;
     z-index: 10;
