@@ -1,4 +1,10 @@
 $(function () {
+    /*logo点击*/
+    $(".logo").click(function () {
+        location.href="/"
+    })
+
+    /* 海报部分 */
     var i = 0  //应展示的图片的索引
     var width = $(".banner").outerWidth() //图片宽度
     var first = $(".banner .imgs li").first().clone()
@@ -20,7 +26,6 @@ $(function () {
         $(".banner .imgs").animate({left: -width * i}, 300)
         $(".banner .dot li").eq(i).addClass("on").siblings().removeClass("on")
     }
-
     /* 图片右滑动 */
     function slideRight() {
         i++
@@ -31,21 +36,18 @@ $(function () {
         $(".banner .imgs").animate({left: -width * i}, 300)
         $(".banner .dot li").eq(i == num - 1 ? 0 : i).addClass("on").siblings().removeClass("on")
     }
-
     /* 点击左按钮 */
     $(".banner .btn_l").click(function () {
         if (!$(".banner .imgs").is(":animated")) {   //判断当前banner是否在执行动画，不在则进行滑动
             slideLeft()
         }
     })
-
     /* 点击右按钮 */
     $(".banner .btn_r").click(function () {
         if (!$(".banner .imgs").is(":animated")) {
             slideRight()
         }
     })
-
     /* 鼠标放在小点上 */
     $(".banner .dot li").hover(function () {
         var index = $(this).index()
@@ -56,12 +58,10 @@ $(function () {
         $(".banner .imgs").stop().animate({left: -width * i}, 300)    //当前动画立即停止，并执行新的动画
         $(this).addClass("on").siblings().removeClass("on")
     })
-
     /* 自动轮播 */
     var t = setInterval(function () {
         slideRight()
     }, 1500)
-
     /* 鼠标移入banner关闭定时器 */
     $(".banner").hover(function () {
         clearInterval(t)
@@ -71,7 +71,8 @@ $(function () {
         }, 1500)
     })
 
-    /* 折叠按钮的拖动 */
+    /* 移动端的折叠按钮 */
+    //折叠按钮的拖动
     var gapX
     var gapY
     var maxLeft = $(window).outerWidth() - $(".collapse").outerWidth()  //按钮最右边时的左距离
@@ -114,10 +115,8 @@ $(function () {
 
         }
     })
-
-
-    /* 折叠下拉框的滑动 */
+    //折叠下拉框的滑动
     $(".expand").on("touchmove", function (e) {
-        // e.preventDefault()
+        e.preventDefault()
     })
 })
