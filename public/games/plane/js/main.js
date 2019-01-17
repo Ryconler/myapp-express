@@ -24,6 +24,7 @@ $(function () {
     socket.on("win", win => {
         if (win) {
             alert("你输了")
+            location.reload()
         }
     })
 
@@ -97,6 +98,7 @@ $(function () {
         if (mBulletRight > eLeft && mBulletLeft < eRight && mBulletBottom > eTop && mBulletTop < eBottom) { //子弹与飞机有接触
             socket.emit("win", "win")
             alert("你赢了")
+            location.reload()
         }
 
     }
