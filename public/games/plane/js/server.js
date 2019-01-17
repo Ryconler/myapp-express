@@ -12,15 +12,18 @@ io.on('connection', socket => {
     //接收我机坐标，并广播出去
     socket.on("mPos",function (pos) {
         // console.log(pos.left)
-        // socket.emit("uPos",pos)
         socket.broadcast.emit("ePos",pos)
     })
 
     //接收我机子弹坐标，并广播出去
     socket.on("mBullet",function (pos) {
         // console.log(pos.left)
-        // socket.emit("uPos",pos)
         socket.broadcast.emit("eBullet",pos)
+    })
+
+    //收到有人赢了，并广播出去
+    socket.on("win",function (win) {
+        socket.broadcast.emit("win",win)
     })
 
 });
