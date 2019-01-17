@@ -2,7 +2,7 @@ $(function () {
     var socket = io('http://111.231.200.245:4000');
     //获取敌机的坐标
     socket.on("ePos", pos => {
-        var left = pos.left
+        var left = pos.left*conWidth
         if (left < 0) {
             $(".ePlane").css({"left": 0});
         } else if (left > maxplaneleft) {
@@ -15,7 +15,7 @@ $(function () {
     var eshootcount = 0
     socket.on("eBullet", pos => {
         eshootcount++
-        var left = pos.left
+        var left = pos.left*conWidth
         $(".container").append("<div id='eBullet" + eshootcount + "' class='eBullet'></div>")
         $("#eBullet" + eshootcount).css({"left": left + "px"})
         $("#eBullet" + eshootcount).animate({top: conHeight}, 700)
@@ -57,7 +57,7 @@ $(function () {
         } else {
             $(".mPlane").css({"left": left + "px"});
         }
-        socket.emit("mPos", {left: left})   //发送我机的坐标
+        socket.emit("mPos", {left: left/conWidth})   //发送我机的坐标百分比
     })
     $(".mPlane").on("touchend", function (e) {
         // console.log("touchend")
@@ -70,14 +70,14 @@ $(function () {
 
             var planeX = $(".mPlane").position().left  //飞机当前的x坐标
             $(".container").append("<div id='mBullet" + shootcount + "' class='mBullet'></div>")
-            var left = planeX + planeWidth / 2 - bulletWidth / 2  //子弹的x坐标
+            var left = planeX + planeWidth / 2 - bulletWidth / 2   //子弹的x坐标
             $("#mBullet" + shootcount).css({"left": left + "px"})
             var t = setInterval(function () {isHit("#mBullet" + shootcount)},100)
             $("#mBullet" + shootcount).animate({bottom: conHeight}, 700,function () {
                 clearInterval(t)
             })
             $(".property .normal ").find("span").last().text(20 - shootcount)
-            socket.emit("mBullet", {left: left})
+            socket.emit("mBullet", {left: left/conWidth})  //发送子弹坐标百分比
         }
     })
 
