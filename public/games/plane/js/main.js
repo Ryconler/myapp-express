@@ -18,7 +18,7 @@ $(function () {
         var left = pos.left*conWidth
         $(".container").append("<div id='eBullet" + eshootcount + "' class='eBullet'></div>")
         $("#eBullet" + eshootcount).css({"left": left + "px"})
-        $("#eBullet" + eshootcount).animate({top: conHeight}, 700)
+        $("#eBullet" + eshootcount).animate({top: (conHeight+5)+"px"}, 700)
     })
     //获取对方赢了的消息
     socket.on("win", win => {
@@ -72,8 +72,8 @@ $(function () {
             $(".container").append("<div id='mBullet" + shootcount + "' class='mBullet'></div>")
             var left = planeX + planeWidth / 2 - bulletWidth / 2   //子弹的x坐标
             $("#mBullet" + shootcount).css({"left": left + "px"})
-            var t = setInterval(function () {isHit("#mBullet" + shootcount)},100)
-            $("#mBullet" + shootcount).animate({bottom: conHeight}, 700,function () {
+            var t = setInterval(function () {isHit("#mBullet" + shootcount)},50)
+            $("#mBullet" + shootcount).animate({bottom: (conHeight+5)+"px"}, 700,function () {
                 clearInterval(t)
             })
             $(".property .normal ").find("span").last().text(20 - shootcount)
