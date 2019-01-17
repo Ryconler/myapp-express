@@ -10,8 +10,23 @@ body {
     border-bottom: #fe1a19 2px solid ;
     position: relative;
 }
-
-.plane {
+.ePlane{
+    width: 2rem;
+    height: 2rem;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+}
+.ePlane img{
+    width: 100%;
+}
+.mPlane {
     width: 2rem;
     height: 2rem;
     /*background: #8392ff;*/
@@ -20,7 +35,7 @@ body {
     position: absolute;
     z-index: 10;
 }
-.plane img{
+.mPlane img{
     width: 100%;
 }
 .shoot {
@@ -35,9 +50,18 @@ body {
     left: 0.5rem;
     top: 50%;
 }
-.bullet {
+.mBullet {
     position: absolute;
     bottom:1rem ;
+    width: 0.5rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #3b4fff;
+
+}
+.eBullet {
+    position: absolute;
+    top:1rem ;
     width: 0.5rem;
     height: 1rem;
     border-radius: 50%;
@@ -51,13 +75,13 @@ body {
     font-size: 16px;
     overflow-y: scroll;
 }
-.property .nomarl{
+.property .normal{
     padding: 1rem;
     height: 1rem;
     line-height: 1rem;
     background: #318fe1;
 }
-.property .nomarl i{
+.property .normal i{
     display: block;
     float: left;
     width: 0.5rem;
