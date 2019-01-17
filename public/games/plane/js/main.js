@@ -1,5 +1,6 @@
 $(function () {
     var socket = io('http://111.231.200.245:4000');
+
     //获取敌机的坐标
     socket.on("ePos", pos => {
         var left = pos.left*conWidth
@@ -27,6 +28,7 @@ $(function () {
             location.reload()
         }
     })
+
 
 
     var planeWidth = $(".mPlane").outerWidth()  //飞机的宽度num
@@ -62,24 +64,34 @@ $(function () {
     $(".mPlane").on("touchend", function (e) {
         // console.log("touchend")
     })
-    var shootcount = 0   //射击次数
-    $(".shoot").on("touchstart", function (e) {
-        e.preventDefault()
-        shootcount++
-        if (shootcount <= 20) {
 
-            var planeX = $(".mPlane").position().left  //飞机当前的x坐标
-            $(".container").append("<div id='mBullet" + shootcount + "' class='mBullet'></div>")
-            var left = planeX + planeWidth / 2 - bulletWidth / 2   //子弹的x坐标
-            $("#mBullet" + shootcount).css({"left": left + "px"})
-            var t = setInterval(function () {isHit("#mBullet" + shootcount)},50)
-            $("#mBullet" + shootcount).animate({bottom: (conHeight+5)+"px"}, 700,function () {
-                clearInterval(t)
-            })
-            $(".property .normal ").find("span").last().text(20 - shootcount)
-            socket.emit("mBullet", {left: left/conWidth})  //发送子弹坐标百分比
-        }
-    })
+    //三秒后才可以射击
+    var cd=2
+    var t=setInterval(function () {
+        $(".shoot span").text(cd--)
+    },1000)
+    setTimeout(function () {
+        clearInterval(t)
+        $(".shoot span").text("发射")
+        var shootcount = 0   //射击次数
+        $(".shoot").on("touchstart", function (e) {
+            e.preventDefault()
+            shootcount++
+            if (shootcount <= 20) {
+                var planeX = $(".mPlane").position().left  //飞机当前的x坐标
+                $(".container").append("<div id='mBullet" + shootcount + "' class='mBullet'></div>")
+                var left = planeX + planeWidth / 2 - bulletWidth / 2   //子弹的x坐标
+                $("#mBullet" + shootcount).css({"left": left + "px"})
+                var t = setInterval(function () {isHit("#mBullet" + shootcount)},50)
+                $("#mBullet" + shootcount).animate({bottom: (conHeight+5)+"px"}, 700,function () {
+                    clearInterval(t)
+                })
+                $(".property .normal ").find("span").last().text(20 - shootcount)
+                socket.emit("mBullet", {left: left/conWidth})  //发送子弹坐标百分比
+            }
+        })
+    },3000)
+
 
 
     //判断子弹是否打中飞机
