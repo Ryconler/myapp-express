@@ -1,4 +1,38 @@
 $(function () {
+    /* “我的”模块 */
+    $(".my").click(function (e) {
+        e.stopPropagation()
+        $(".mycontent").stop().fadeToggle("fast")
+    })
+    $(".mycontent").click(function (e) {
+        e.stopPropagation()
+        $(this).css({display:"block"})
+    })
+    $("body").click(function () {   //点击其他地方 我的内容消失
+        $(".mycontent").css({display:"none"})
+    })
+    //退出
+    $("#quit").click(function () {
+        $.get("/user/logout",function (res) {
+            location.reload()
+        })
+    })
+    //回到首页
+    $("#index").click(function () {
+        location.href="/"
+    })
+    //pk
+    $("#pk").click(function () {
+        var username=prompt("输入要挑战的宠物主人的用户名","")
+        if(username!==null){
+            if(username.trim()===""){
+                alert("不能为空哦")
+            }else {
+                location.href="/pk/enemy/"+username.trim()
+            }
+        }else {}
+    })
+    //账号密码修改
     var editType=-1  //更改的类型 0为用户名 1为密码 -1为取消
     //点击更改按钮
     $("#edit_username").click(function () {
@@ -58,6 +92,7 @@ $(function () {
         }
     })
 
+    //宠物名字获取与修改
     $.get("/pet/mypet",function (res) {
         if(res!=="error"){
             $(".profile_content p:last-child em").text(res.P_NAME)

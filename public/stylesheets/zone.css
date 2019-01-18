@@ -1,5 +1,5 @@
 .header_wrap .title .title_wrap i{
-    background: url("../images/icon.png") no-repeat;
+    background-image: url("../images/icon.png");
     background-size: 1.75rem;
     background-position: 0 -5.25rem;
     /* 让图片和文字底部对齐*/
@@ -52,6 +52,11 @@
 
 .module_title.pet{
     background: #d2357b;
+}
+.module_title.pet a{
+    color: #5fd270;
+    margin-right: 0.3rem;
+    float: right;
 }
 .pet_content{
     position: relative;

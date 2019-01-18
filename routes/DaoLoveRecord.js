@@ -32,6 +32,7 @@ function DaoLoveRecord() {
                 console.log('[INSERT ERROR] - ', err.message);
                 callback&&callback("error")
             }else {
+
                 callback&&callback("success")
             }
         })
@@ -40,5 +41,5 @@ function DaoLoveRecord() {
 
 }
 
-// new daoLoveRecord().retrieveRecordsByUid(1)
+new DaoLoveRecord().retrieveRecords()
 module.exports = DaoLoveRecord

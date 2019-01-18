@@ -5,21 +5,13 @@ var User = require('./DaoUser')
 var router = express.Router();
 
 router.get('/records', function (req, res) {
-    var u = new User()
-    u.isLogin(req, res, function (result) {
-        if (result === "yes") {
-            var userSession = req.session.user
-            var lr = new LoveRecord()
-            lr.retrieveRecords(function (results) {
-                var data = [{LR_CONTENT: '', LR_YEAR: '', LR_MONTH: '', LR_DAY: ''}]
-                if (results) {
-                    data = results
-                }
-                res.render('loverecords', {data: data, user: userSession})
-            })
-        } else {
-            res.redirect("/user/login")
+    var lr = new LoveRecord()
+    lr.retrieveRecords(function (results) {
+        var data = [{LR_CONTENT: '', LR_YEAR: '', LR_MONTH: '', LR_DAY: ''}]
+        if (results.length!==0) {
+            data = results
         }
+        res.render('loverecords', {data: data})
     })
 })
 
@@ -42,7 +34,7 @@ router.post('/createRecord', function (req, res) {
             })
 
         } else {
-            res.redirect("/user/login")
+            res.send("noLogin")
         }
     })
 })

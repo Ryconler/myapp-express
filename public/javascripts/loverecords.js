@@ -46,7 +46,14 @@ $(function () {
     init()
     //输入框事件
     $(".text").click(function (e) {
-        $(".alert_input").css({display: "block"})
+        $.get("/user/isLogin",function (res) {
+            if(res==="yes"){
+                $(".alert_input").css({display: "block"})
+            }else {
+                alert("请先登录")
+                location.href="/user/login"
+            }
+        })
     })
     $(".cancel").click(function () {
         init()
@@ -57,16 +64,20 @@ $(function () {
         var year = $("#year").val()
         var month = $("#month").val()
         var day = $("#day").val()
-        if (content == "") {
+        if (content === "") {
             alert("内容不能为空")
         } else {
             $.post("/love/createRecord", {content: content, year: year, month: month, day: day}, function (res) {
-                if(res=="success"){
+                if(res==="success"){
                     alert("发布成功！")
                     $(".alert_input").css({display: "none"})
                     location.reload()
+                }else if(res==="noLogin"){
+                    alert("请先登录")
+                    location.href="/user/login"
                 }else {
                     alert("内部错误")
+
                 }
             })
         }

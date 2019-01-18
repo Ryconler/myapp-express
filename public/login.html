@@ -5,20 +5,24 @@
     <title>登录或注册</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
-    <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
     <script src="/javascripts/login.js"></script>
 </head>
 <body>
-<div class="login">
-    <div class="welcome"><img src="/images/welcome.png"></div>
+<div class="wrap">
+    <div class="login-welcome"><img src="/images/welcome.png"></div>
     <div class="login-form">
         <div class="login-inp"><label>用户名</label><input type="text" placeholder="" id="username"></div>
         <div class="login-inp"><label>密码</label><input type="password" placeholder="" id="password"></div>
-        <div class="login-inp"><a id="submit">登录或注册</a></div>
+        <div class="login-inp"><div id="submit">登录或注册</div></div>
     </div>
-    <div class="login-info"><a href="/">返回首页</a></div>
-    <div class="login-txt"></div>
+    <div class="login-info">
+        <p><a href="/">返回首页</a></p>
+        <p></p>
+    </div>
 </div>
+
+
 </body>
 </html>

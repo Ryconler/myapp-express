@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
     <link type="text/css" rel="stylesheet" href="/stylesheets/common.css">
     <link type="text/css" rel="stylesheet" href="/stylesheets/loverecords.css">
-    <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
     <script src="/javascripts/common.js"></script>
     <script src="/javascripts/loverecords.js"></script>
@@ -14,20 +14,12 @@
 <body>
 <div class="container">
     <div class="pop">
-        <div class="mycontent">
-            <div class="mycontent_item" id="myzone"><p>我的空间</p></div>
-            <div class="mycontent_space"></div>
-            <div class="mycontent_item" id="pk"><p>宠物PK</p></div>
-            <div class="mycontent_space"></div>
-            <div class="mycontent_item" id="quit"><p>退出</p></div>
-        </div>
-        <div class="welcome">
-            <h2><span></span>，<%=user.username %></h2>
-        </div>
+        <!--<div class="welcome">-->
+            <!--<h2><span></span>，</h2>-->
+        <!--</div>-->
         <div class="alert_input">
-            <div class="input_wrap" clearfix>
-        <textarea>
-        </textarea>
+            <div class="input_wrap">
+                <textarea></textarea>
                 <div class="selects">
                     <select id="year">
                         <option value="2019">2019年</option>
@@ -90,13 +82,12 @@
                     <button class="submit">确定</button>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="header">
         <div class="header_wrap">
             <div class="back">
-                <a href="/"><div class="back_wrap"></div></a>
+                <div class="back_wrap"></div>
             </div>
             <div class="title">
                 <div class="title_wrap">
@@ -104,8 +95,7 @@
                 </div>
             </div>
             <div class="my">
-                <div class="my_wrap">
-                </div>
+                <div class="my_wrap"><a href="/user/zone"></a></div>
             </div>
         </div>
     </div>

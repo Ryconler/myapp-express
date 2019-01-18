@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
-    <meta name="referrer" content="no-referrer"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <!--<meta name="referrer" content="no-referrer"/>-->
     <link rel="stylesheet" href="/stylesheets/appindex.css"/>
     <link rel="stylesheet" href="/stylesheets/appindex_m.css" media="screen and (max-width:768px)"/>
-    <script src="/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
     <script src="/javascripts/appindex.js"></script>
 </head>
 <body>
 <!--移动端-->
-<div class="collapse">
-    <div class="white_line"></div>
-    <div class="white_line"></div>
-    <div class="white_line"></div>
-</div>
+<div class="collapse"></div>
 <div class="expand">
     <p>Hei yo~</p>
     <ul>
         <li><a href="/love/records">LoveStory</a></li>
-        <li><a href="/chat/chatroom">公共聊天室</a></li>
-        <li><a href="/games/plane/index.html">打飞机</a></li>
+        <li><a href="/chat/chatroom" target="_blank">公共聊天室</a></li>
+        <li><a href="/games/plane/index.html" target="_blank">飞机大战</a></li>
     </ul>
     <!--<div class="line"></div>-->
     <p>推广位</p>
@@ -39,16 +35,15 @@
     </ul>
 
 </div>
-
 <header>
     <div class="header_wrap">
-        <div class="logo"></div>
+        <div class="logo"><a href="/"></a></div>
         <ul>
             <li><a>Hei yo~</a>
                 <div class="dropdown">
                     <a href="/love/records">LoveStory</a>
-                    <a href="/chat/chatroom">公共聊天室</a>
-                    <a href="/games/plane/index.html">打飞机（移动端）</a>
+                    <a href="/chat/chatroom" target="_blank">公共聊天室</a>
+                    <a href="/games/plane/index.html" target="_blank">飞机大战（移动端）</a>
                 </div>
             </li>
             <li><a>推广位</a>
@@ -64,16 +59,16 @@
                 </div>
             </li>
         </ul>
+        <div class="my"><a href="/user/zone"></a></div>
     </div>
 </header>
 <main>
     <div class="main_wrap">
         <div class="banner">
             <ul class="imgs">
-                <li><a href="#"><img src="http://www.ntu.edu.cn/_upload/article/images/6a/eb/6404761e4499a3844a67c921b49d/44239fb6-1e6f-48c7-a39b-78d3c8b2e2be.jpg"></a></li>
-                <li><a href="#"><img src="http://www.ntu.edu.cn/_upload/article/images/e3/f2/ac366e074d6c9e5a7c638efc1a02/a55868fc-2fe9-440d-9e8c-97d9ccb4d6de.jpg"></a></li>
-                <li><a href="#"><img src="http://www.ntu.edu.cn/_upload/article/images/94/fa/5661c9dc4bedb5d8e7142dcd5782/75c05588-d2a1-40b8-8833-72ed87e8f95a.jpg"></a></li>
-                <li><a href="#"><img src="http://www.ntu.edu.cn/_upload/article/images/d3/3c/f5743fdc4d47a84aba29a20a4cc2/8411b9ce-3790-4448-9763-6f7950186e28.jpg"></a></li>
+                <li><img src="/images/banner3.jpg" alt="banner3"/></li>
+                <li><img src="/images/banner2.png" alt="banner2"/></li>
+                <li><img src="/images/banner1.jpg" alt="banner1"/></li>
             </ul>
             <ul class="dot"></ul>
             <div class="button btn_l">&lt;</div>
@@ -82,13 +77,13 @@
         <!--通大要闻-->
         <div class="title">
             <div class="title_name">通大要闻</div>
-            <div class="title_more"><a href="http://news.ntu.edu.cn/" >更多&gt;&gt;</a></div>
+            <div class="title_more"><a href="http://news.ntu.edu.cn/" target="_blank">更多&gt;&gt;</a></div>
             <div class="title_line"></div>
         </div>
         <div class="content">
             <ul>
                 <li>
-                    <a href="<%=ntu[0].url %>">
+                    <a href="<%=ntu[0].url %>" target="_blank">
                         <!--后端使用的是ejs模板引擎渲染的页面-->
                         <img src="http://www.ntu.edu.cn<%=ntu[0].img %>"/>
                         <h3><%=ntu[0].title %></h3>
@@ -96,7 +91,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<%=ntu[1].url %>">
+                    <a href="<%=ntu[1].url %>" target="_blank">
                         <!--后端使用的是ejs模板引擎渲染的页面-->
                         <img src="http://www.ntu.edu.cn<%=ntu[1].img %>"/>
                         <h3><%=ntu[1].title %></h3>
@@ -104,7 +99,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<%=ntu[2].url %>">
+                    <a href="<%=ntu[2].url %>" target="_blank">
                         <!--后端使用的是ejs模板引擎渲染的页面-->
                         <img src="http://www.ntu.edu.cn<%=ntu[2].img %>"/>
                         <h3><%=ntu[2].title %></h3>
@@ -116,27 +111,27 @@
         <!--视频推荐-->
         <div class="title">
             <div class="title_name">视频推荐</div>
-            <div class="title_more"><a href="https://www.bilibili.com/">更多&gt;&gt;</a></div>
+            <div class="title_more"><a href="https://www.bilibili.com/" target="_blank">更多&gt;&gt;</a></div>
             <div class="title_line"></div>
         </div>
         <div class="content">
             <ul>
                 <li>
-                    <a href="https://www.bilibili.com<%=bili[0].url %>">
+                    <a href="https://www.bilibili.com<%=bili[0].url %>" target="_blank">
                         <img src="https:<%=bili[0].img %>"/>
                         <h3><%=bili[0].title %></h3>
                         <h4><%=bili[0].count %></h4>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.bilibili.com<%=bili[1].url %>">
+                    <a href="https://www.bilibili.com<%=bili[1].url %>" target="_blank">
                         <img src="https:<%=bili[1].img %>"/>
                         <h3><%=bili[1].title %></h3>
                         <h4><%=bili[1].count %></h4>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.bilibili.com<%=bili[2].url %>">
+                    <a href="https://www.bilibili.com<%=bili[2].url %>" target="_blank">
                         <img src="https:<%=bili[2].img %>"/>
                         <h3><%=bili[2].title %></h3>
                         <h4><%=bili[2].count %></h4>

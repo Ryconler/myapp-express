@@ -1,12 +1,9 @@
 $(function () {
-    /*logo点击*/
-    $(".logo").click(function () {
-        location.href="/"
-    })
 
     /* 海报部分 */
     var i = 0  //应展示的图片的索引
-    var width = $(".banner").outerWidth() //图片宽度
+    var width = $(".banner")[0].getBoundingClientRect().width //图片宽度
+    console.log(width)
     var first = $(".banner .imgs li").first().clone()
     $(".banner .imgs").append(first)  //将第一张图复制粘贴到最后面，用来实现最后一张图到第一张图的无缝滑动
     var num = $(".banner .imgs li").size()  //获得li的数量
@@ -87,8 +84,7 @@ $(function () {
         gapX = touchX - left
         gapY = touchY - top
         //改变样式
-        $(this).css({background: "rgba(0,0,0,1)"})
-        $(".collapse .white_line").css({background: "rgba(255,255,255,1)"})
+        $(this).css({opacity: 0.9})
         //获取按下时间
         touchStartTime=e.timeStamp
     })
@@ -106,8 +102,7 @@ $(function () {
         $(this).css({left: left + "px", top: top + "px"})
     })
     $(".collapse").on("touchend", function (e) {
-        $(this).css({background: "rgba(0,0,0,0.5)"})
-        $(".collapse .white_line").css({background: "rgba(255,255,255,0.5)"})
+        $(this).css({opacity: 0.5})
         //获取抬起时间
         var touchEndTime=e.timeStamp
         if (touchEndTime-touchStartTime<100) {

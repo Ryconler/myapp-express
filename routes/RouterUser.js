@@ -14,6 +14,16 @@ router.get('/login', function (req, res) {
     })
 
 })
+router.get('/isLogin', function (req, res) {
+    var u = new User()
+    u.isLogin(req, res, function (result) {
+        if (result === "yes") {
+            res.send("yes")
+        } else {
+            res.send("no")
+        }
+    })
+})
 router.get('/logout', function (req, res) {
     delete req.session.user;
     res.clearCookie("user");
