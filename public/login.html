@@ -8,14 +8,21 @@
     <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
     <script src="/javascripts/login.js"></script>
+    <script src="/javascripts/loginValidate.js"></script>
 </head>
 <body>
 <div class="wrap">
     <div class="login-welcome"><img src="/images/welcome.png"></div>
     <div class="login-form">
-        <div class="login-inp"><label>用户名</label><input type="text" placeholder="" id="username"></div>
-        <div class="login-inp"><label>密码</label><input type="password" placeholder="" id="password"></div>
-        <div class="login-inp"><div id="submit">登录或注册</div></div>
+        <div class="login-inp">
+            <label>用户名</label><input type="text" data-rule="maxlength:10|required:true" id="username">
+        </div>
+        <div class="login-inp">
+            <label>密码</label><input type="password" data-rule='maxlength:20|required:true|pattern:"^[a-zA-Z0-9]*$"' id="password">
+        </div>
+        <div class="login-inp">
+            <div id="submit">登录或注册</div>
+        </div>
     </div>
     <div class="login-info">
         <p><a href="/">返回首页</a></p>

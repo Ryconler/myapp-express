@@ -23,8 +23,15 @@ function DaoUser() {
                 console.log(err)
                 return
             } else {
-                // console.log(result)
-                callback && callback("success")
+                connection.query("CALL CREATEPET(?)",result.insertId,function (err) {
+                    if (err) {
+                        console.log(err)
+                        return
+                    }else {
+                        callback && callback(result.insertId)
+                    }
+                })
+
             }
         })
     }
@@ -72,5 +79,5 @@ function DaoUser() {
     }
 }
 
-// new DaoUser().updateUser(1,"朱星杰","123456")
+// new DaoUser().createUser("123","123")
 module.exports = DaoUser
