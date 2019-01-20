@@ -79,5 +79,5 @@ function DaoUser() {
     }
 }
 
-// new DaoUser().createUser("123","123")
+new DaoUser().createUser("12345678901","123")
 module.exports = DaoUser

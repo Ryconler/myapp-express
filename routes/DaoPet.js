@@ -45,7 +45,7 @@ function DaoPet() {
     this.upGrade=function(oldLevel,newLevel,u_id,callback) {
         if(newLevel===1&&oldLevel===0){   //0级升1级
             connection.query("UPDATE pet " +
-                "SET P_HP=100,P_POWER=10,P_SPEED=1,P_FOOD_DAILY=3,P_TRAIN_DAILY=3,P_PK_EXP_DAILY=150,P_HATCH_DAILY=0 " +
+                "SET P_HP=100,P_POWER=10,P_SPEED=1,P_FOOD_DAILY=3,P_TRAIN_DAILY=3,P_PK_EXP_DAILY=150 " +
                 "WHERE U_ID=?",
                 [u_id],
                 function (err) {
