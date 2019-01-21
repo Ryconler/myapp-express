@@ -74,10 +74,23 @@ function DaoUser() {
                 callback && callback("no")
             }
         }
-
-
+    }
+    this.isFriendWith=function (u_id,fru_id,callback) {
+        connection.query("SELECT * FROM friend WHERE u_id=? AND fru_id=?",[u_id,fru_id],function (err,result) {
+            if (err) {
+                console.log(err)
+                callback && callback("error")
+                return
+            } else {
+                if(result.length!==0){
+                    callback && callback("yes")
+                }else {
+                    callback && callback("no")
+                }
+            }
+        })
     }
 }
 
-new DaoUser().createUser("12345678901","123")
+// new DaoUser().createUser("12345678901","123")
 module.exports = DaoUser

@@ -5,34 +5,61 @@ var User = require('./DaoUser')
 var router = express.Router();
 
 router.get('/records', function (req, res) {
-    var lr = new LoveRecord()
-    lr.retrieveRecords(function (results) {
-        var data = [{LR_CONTENT: '', LR_YEAR: '', LR_MONTH: '', LR_DAY: ''}]
-        if (results.length!==0) {
-            data = results
+
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            new LoveRecord().retrieveFriendsRecords(req.session.user.id, function (results) {
+                if (results.length !== 0) {
+                    res.render('loverecords', {data: results})
+                }
+            })
+        } else {
+            new LoveRecord().retrieveRecords(function (results) {
+                if (results.length !== 0) {
+                    res.render('loverecords', {data: results})
+                }
+            })
         }
-        res.render('loverecords', {data: data})
     })
+
 })
 
 router.post('/createRecord', function (req, res) {
     new User().isLogin(req, res, function (result) {
         if (result === "yes") {
             var content = req.body.content
-            var year = req.body.year
-            var month = req.body.month
-            var day = req.body.day
-            var order_date = "" + year + (month < 10 ? "0" + month : month) + (day < 10 ? "0" + day : day) + new Date().toLocaleTimeString()
+            var authority = req.body.authority
+            var date = new Date()
+            var year = date.getFullYear()
+            var month = date.getMonth() + 1  //0-11
+            var day = date.getDate()
+            var publish_date = "" + year + "-" + (month < 10 ? "0" + month : month) + "-" + (day < 10 ? "0" + day : day) + " " + new Date().toLocaleTimeString()
             var u_id = req.session.user.id
             var lr = new LoveRecord()
-            lr.createRecord(content, year, month, day, order_date, u_id, function (result) {
-                if (result == "success") {
+            lr.createRecord(content, year, month, day, publish_date, authority, u_id, function (result) {
+                if (result === "success") {
                     res.send("success")
                 } else {
                     res.send("error")
                 }
             })
-
+        } else {
+            res.send("noLogin")
+        }
+    })
+})
+router.post('/updateRecordAuthority', function (req, res) {
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            var id = req.body.id
+            var authority = req.body.authority
+            new LoveRecord().updateRecordAuthority(authority, id, function (result) {
+                if (result === "success") {
+                    res.send("success")
+                } else {
+                    res.send("error")
+                }
+            })
         } else {
             res.send("noLogin")
         }

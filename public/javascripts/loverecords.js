@@ -19,70 +19,52 @@ $(function () {
             },1000)
         })
     }
-    welcome()
+    // welcome()
     //将输入框内容输入框还原
-    function init() {
-        var date = new Date()
-        var year = date.getFullYear()
-        var month = date.getMonth()  //0-11
-        var day = date.getDate()
-        $("textarea").val("")
-        $("#year option").each(function (index) {
-            if ($(this).attr("value") == year) {
-                $(this).attr({selected: true})
-            }
-        })
-        $("#month option").each(function (index) {
-            if ($(this).attr("value") == month + 1) {
-                $(this).attr({selected: true})
-            }
-        })
-        $("#day option").each(function (index) {
-            if ($(this).attr("value") == day) {
-                $(this).attr({selected: true})
-            }
-        })
-    }
-    init()
+
     //输入框事件
-    $(".text").click(function (e) {
+    $(".write").click(function (e) {
         $.get("/user/isLogin",function (res) {
-            if(res==="yes"){
+            if(res){
                 $(".alert_input").css({display: "block"})
             }else {
                 alert("请先登录")
-                location.href="/user/login"
+                $("body").load("/user/login")
             }
         })
     })
     $(".cancel").click(function () {
-        init()
+        $("textarea").val("")
         $(".alert_input").css({display: "none"})
     })
     $(".submit").click(function () {
-        var content = $("textarea").val().trim()
-        var year = $("#year").val()
-        var month = $("#month").val()
-        var day = $("#day").val()
+        var content = $.trim($("textarea").val())
+        var authority=$("#authority").val()
         if (content === "") {
             alert("内容不能为空")
         } else {
-            $.post("/love/createRecord", {content: content, year: year, month: month, day: day}, function (res) {
+            $.post("/love/createRecord", {content: content,authority:authority}, function (res) {
                 if(res==="success"){
                     alert("发布成功！")
                     $(".alert_input").css({display: "none"})
                     location.reload()
                 }else if(res==="noLogin"){
                     alert("请先登录")
-                    location.href="/user/login"
+                    $("body").load("/user/login")
                 }else {
                     alert("内部错误")
-
                 }
             })
         }
 
     })
 
+    //点击内容单项
+    $(".content_item").each(function (index) {
+        $(this).click(function () {
+            $(this).find(".extra").stop().slideToggle("normal")
+            $(this).siblings().find(".extra").hide()
+        })
+    })
 
 })

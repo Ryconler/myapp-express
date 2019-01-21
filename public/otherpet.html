@@ -16,7 +16,7 @@
         calc()
     </script>
     <script src="/javascripts/drawpet.js"></script>
-    <script src="/javascripts/pet.js"></script>
+    <script src="/javascripts/otherpet.js"></script>
 </head>
 <body>
 <div class="pet_content">
@@ -28,17 +28,6 @@
     </div>
     <progress id="level" value="50" max="100"></progress>
     <canvas id="canvas">你的浏览器不支持宠物系统</canvas>
-    <div class="train_content">
-        <div class="train_wrap">
-            <h1>选择要提升的属性</h1>
-            <label><input type="radio" value="hp" name="property"/><span>生命值+100</span></label>
-            <label><input type="radio" value="power" name="property"/><span>力量+10</span></label>
-            <label><input type="radio" value="speed" name="property"/><span>速度+0.1</span></label>
-            <label><input type="radio" value="talent" name="property"/><span>天赋+5</span></label>
-            <button>取消</button><button class="submit">确定</button>
-        </div>
-
-    </div>
     <div class="appendix">
         <div class="property">
             <p><span>生命值：</span><span>0</span></p>
@@ -47,9 +36,7 @@
             <p><span>天赋：</span><span>0</span></p>
         </div>
         <div class="operation">
-            <p><button id='hatch'>孵化</button></p>
-            <p><button id="food">喂食</button></p>
-            <p><button id="train">训练</button></p>
+            <p><button id='pk'>和它PK</button></p>
         </div>
     </div>
 </div>

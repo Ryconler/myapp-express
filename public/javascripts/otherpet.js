@@ -228,8 +228,10 @@ $(function () {
         beard()
         hands()
     }
-    /* 加载宠物模块 */
-    $.get("/pet/mypet",function (res) {
+    /* 加载对方宠物模块 */
+    var pathnamearr=window.parent.location.pathname.split("/")
+    var id=pathnamearr[pathnamearr.length-1]
+    $.get("/pet/"+id,function (res) {
         if(res!=="error"){
             //四个属性值设置
             $(".property p").eq(0).children().last().text(res.P_HP)
@@ -257,72 +259,14 @@ $(function () {
             if(level===0){
                 //重画宠物蛋
                 drawEgg()
-                $("#food").hide()
-                $("#train").hide()
-                //孵化
-                $("#hatch").click(function () {
-                    $.post("/pet/addExpByHatch",{exp:50},function (res) {
-                        if(res==="success"){
-                            alert("孵化成功，经验+50")
-                            location.reload()
-                        }else if(res==="error_level"){
-                            alert("你的宠物现在已经不是蛋咯")
-                        }else if(res==="error_num"){
-                            alert("每日孵化次数已达上限")
-                        }else {
-                            alert("内部错误")
-                        }
-                    })
-                })
             }else {
-                $("#hatch").hide()
                 drawPet()
             }
         }
     })
-    //喂食
-    $("#food").click(function () {
-        $.post("/pet/addExpByFood",{exp:50},function (res) {
-            if(res==="success"){
-                alert("喂食成功，经验+50")
-                location.reload()
-            }else if(res==="error_level"){
-                alert("你的宠物现在还是蛋哦，不能吃东西呢")
-            }else if(res==="error_num"){
-                alert("每日喂食次数已达上限")
-            }
-            else {
-                alert("内部错误")
-            }
-        })
-    })
-    //训练
-    $("#train").click(function () {
-        $(".pet_content .train_content").css({display:"block"})
-    })
-    //取消
-    $(".train_content .train_wrap button:nth-last-child(2)").click(function () {
-        $(".pet_content .train_content").css({display:"none"})
-    })
-    //确定
-    $(".train_content .train_wrap button:nth-last-child(1)").click(function () {
-        var value=$(".train_wrap input:checked").val()
-        if(value!=null){
-            $.post("/pet/addProByTrain",{value:value},function (res) {
-                if(res==="success"){
-                    alert("训练成功")
-                    location.reload()
-                }else if(res==="error_level"){
-                    alert("你的宠物现在还是蛋哦，还不能训练")
-                }else if(res==="error_num"){
-                    alert("每日训练次数已达上限")
-                }
-                else {
-                    alert("内部错误")
-                }
-            })
-        }else {
-            alert("请至少选择一个属性来训练")
-        }
+
+    //pk
+    $("#pk").click(function () {
+        window.parent.location.href="/pk/enemy/"+id
     })
 })

@@ -19,10 +19,15 @@
     position: relative;
     width: 100%;
     height: 100%;
+
+}
+.pet_content .level_info .level_info_wrap span:first-child{
+    position: absolute;
+    left: 0.5rem;
 }
 .pet_content .level_info .level_info_wrap span:last-child{
     position: absolute;
-    right: 0;
+    right: 0.5rem;
 }
 .pet_content progress{
     display: block;
@@ -35,7 +40,6 @@
 .pet_content canvas{
     display: block;
     margin: 0 auto;
-    background: #f0f0f0;
 }
 .pet_content .appendix{
     width: 5.5rem;
@@ -43,13 +47,6 @@
     position: absolute;
     right: 0;
     bottom:  0;
-}
-.pet_content .hatch{
-    position: absolute;
-    left: 4.25rem;
-    top: 6rem;
-    font-size: 0.8rem;
-    color: #888;
 }
 
 .appendix .property{
@@ -64,7 +61,7 @@
 }
 .appendix .property p{
     font-size: 0.7rem;
-    color: #000;
+    color: #fff;
 }
 .appendix .property p span:first-child{
     text-align: right;

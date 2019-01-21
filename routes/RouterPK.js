@@ -5,15 +5,15 @@ var User = require('./DaoUser')
 var router = express.Router();
 
 //PK战场
-router.get('/enemy/:username', function (req, res) {
+router.get('/enemy/:id', function (req, res) {
     new User().isLogin(req, res, function (result) {
         if (result === "yes") {
-            var eUsername = req.params.username
-            var mUsername = req.session.user.username
+            var eid = req.params.id
+            var mid = req.session.user.id
             // console.log(eUsername)
             //获取我和敌人的宠物所有信息后返回给前端
-            new Pet().getPetByUsername(mUsername, function (mPet) {
-                new Pet().getPetByUsername(eUsername, function (ePet) {
+            new Pet().getPet(mid, function (mPet) {
+                new Pet().getPet(eid, function (ePet) {
                     if (ePet.length !== 0) {
                         res.render('pk', {mPet: mPet[0], ePet: ePet[0]})
                     } else {
@@ -25,7 +25,7 @@ router.get('/enemy/:username', function (req, res) {
                 })
             })
         } else {
-            res.redirect("/users/login")
+            res.redirect("/user/login")
         }
     })
 })

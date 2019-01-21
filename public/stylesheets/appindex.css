@@ -1,154 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft YaHei";
 
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-body{
-    background: #020222;
-}
 
-.collapse{
-    display: none;
-}
-.expand{
-    display: none;
-}
-/* header */
-header {
-    /*z-index: 10;*/
-    /*background: #F9F9f9;*/
-    border-bottom: 1px solid #f69494;
-    /*box-shadow:0 1px 1px rgba(255, 0, 0, 0.2);*/
-    width: 100%;
-    min-width: 1000px;
-    height: 55px;
-}
-
-.header_wrap {
-    width: 1000px;
-    height: 100%;
-    margin: 0 auto;
-}
-.header_wrap .logo {
-    background-image: url("../images/logo.png");
-    width: 150px;
-    height: 55px;
-    float: left;
-}
-.header_wrap .logo a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.header_wrap .my{
-    background-image: url("../images/icon.png");
-    background-size: 35px;
-    background-position: 0 -35px;
-    width: 35px;
-    height: 35px;
-    margin:10px 0 ;
-    float: right;
-}
-.header_wrap .my a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.header_wrap ul {
-    margin: 0 50px;
-    float: left;
-    height: 55px;
-    font-size: 20px;
-}
-.header_wrap li {
-    position: relative;
-    float: left;
-    margin-right: 50px;
-    padding: 0 20px;
-    height: 55px;
-    text-align: center;
-    line-height: 55px;
-    cursor: pointer;
-
-}
-.header_wrap li>a{
-    font-weight: bolder;
-    color: #f69494;
-}
-.header_wrap li .dropdown {
-    display: none;
-    overflow: hidden;
-    position: absolute;
-    top: 55px;
-    left: 0;
-    width: 150px;
-    border: 1px #f69494 solid;
-    background: #020222;
-    text-align: left;
-    z-index: 10;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-
-}
-
-.header_wrap li .dropdown a {
-    font-size: 14px;
-    line-height: 40px;
-    padding-left: 20px;
-    text-decoration: none;
-    color: #f6d8bf;
-    display: block;
-}
-
-.header_wrap li:hover {
-    background-color: #f6d8bf;
-}
-
-.header_wrap li:hover .dropdown {
-    display: block;
-    animation-name: fadeIn; /*动画名称*/
-    animation-duration: 0.3s; /*动画持续时间*/
-    animation-iteration-count: 1; /*动画次数*/
-}
-
-.header_wrap li .dropdown a:hover {
-    color: #020222;
-    background: #f6d8bf;
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0; /*初始状态 透明度为0*/
-    }
-    20%{
-        opacity: .2;
-    }
-    50% {
-        opacity: .5; /*中间状态 透明度为0.5*/
-    }
-    70%{
-        opacity: .7;
-    }
-    100% {
-        opacity: 1; /*结尾状态 透明度为1*/
-    }
-}
 
 /* main */
-main{
-    width: 100%;
-    min-width: 1000px;
-}
-.main_wrap {
-    width: 1000px;
-    margin: 0 auto;
-    /*background: #fff;*/
-}
+
 .banner {
     position: relative;
     width: 1000px;
@@ -169,7 +23,8 @@ main{
     width: 1000px;
     float: left;
 }
-.banner .imgs li img{
+
+.banner .imgs li img {
     width: 1000px;
     height: 300px;
 }
@@ -209,7 +64,7 @@ main{
     font-family: "宋体";
 }
 
-.banner:hover .button{
+.banner:hover .button {
     background: rgba(246, 148, 148, 0.7);
     color: rgba(255, 255, 255, 1)
 }
@@ -222,21 +77,23 @@ main{
     right: 0;
 }
 
-.title{
+.title {
     position: relative;
     width: 1000px;
     /*height: 40px;*/
-    margin-top:30px ;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
-.title .title_name{
+
+.title .title_name {
     position: relative;
     display: block;
     font-size: 20px;
     font-weight: bold;
     color: #f69494;
 }
-.title .title_more{
+
+.title .title_more {
     position: absolute;
     width: 100%;
     text-align: right;
@@ -246,10 +103,12 @@ main{
     font-size: 16px;
     vertical-align: middle;
 }
-.title .title_more a{
-    color:#f69494 ;
+
+.title .title_more a {
+    color: #f69494;
 }
-.title .title_line{
+
+.title .title_line {
     position: relative;
     width: 100%;
     height: 2px;
@@ -257,32 +116,37 @@ main{
     margin-top: 15px;
 }
 
-.content{
+.content {
     display: block;
     width: 100%;
     height: 100%;
     /*background: #318fe1;*/
-    overflow:hidden
+    overflow: hidden
 }
-.content li{
+
+.content li {
     float: left;
     width: 300px;
     /*background: #e38d13;*/
     margin-right: 50px;
 }
-.content li:nth-child(3){
+
+.content li:nth-child(3) {
     margin-right: 0;
 }
-.content li a{
+
+.content li a {
     display: block;
 }
-.content li a img{
+
+.content li a img {
     width: 100%;
     height: 180px;
 }
-.content li a h3{
+
+.content li a h3 {
     display: block;
-    color:#2aabd2;
+    color: #2aabd2;
     /* 下面三行实现文字单行，超出部分1️⃣省略号显示 */
     overflow: hidden;
     white-space: nowrap;
@@ -291,7 +155,8 @@ main{
     font-size: 18px;
     margin-top: 5px;
 }
-.content li a h4{
+
+.content li a h4 {
     font-weight: bold;
     font-size: 14px;
     color: #ffba41;
@@ -299,30 +164,90 @@ main{
 }
 
 /* footer */
-footer{
+footer {
     /*background: #fff;*/
     width: 100%;
     min-width: 1000px;
     margin-top: 50px;
     padding: 10px 0;
-    border-top:1px solid #f69494;
+    border-top: 1px solid #f69494;
     /*box-shadow: 0 -1px 1px rgba(255, 0, 0, 0.2);*/
     /*background: #eee;*/
 }
 
-.foot_wrap{
+.foot_wrap {
     width: 100%;
     /*margin: 10px auto 0;*/
     height: 100%;
 }
-.foot_wrap p{
+
+.foot_wrap p {
     text-align: center;
     font-size: 14px;
     color: #f69494;
 
 }
-.foot_wrap a{
+
+.foot_wrap a {
     color: #f69494;
 }
+
+
+@media screen and (max-width:768px ){
+    .banner{
+        width: 18rem;
+        height: 8rem;
+    }
+    .banner .imgs li{
+        width: 18rem;
+    }
+    .banner .imgs li img{
+        width: 18rem;
+        height: 8rem;
+    }
+    .banner .button{
+        display: none;
+    }
+    .title{
+        position: relative;
+        width: 100%;
+        margin-top: 0.6rem;;
+        margin-bottom: 0.45rem;
+    }
+    .title .title_name{
+        color: #f69494;
+        display: block;
+        font-size: 0.8rem;
+    }
+    .title .title_more{
+        font-size: 0.8rem;
+    }
+    .title .title_line{
+        width: 100%;
+        height: 1px;
+        margin-top: 0.4rem;
+    }
+    .content ul{
+        display: block;
+        overflow: hidden;
+    }
+    .content li{
+        width: 100%;
+        display: block;
+        /*margin-left: 0.6rem;*/
+        /*margin-bottom: 0.6rem;*/
+        margin-bottom:0.6rem;
+    }
+    .content li a img{
+        width: 100%;
+        height: 10.8rem;
+    }
+    footer{
+        min-width: 100%;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+    }
+}
+
 
 

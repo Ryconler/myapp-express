@@ -18,9 +18,10 @@ router.get('/isLogin', function (req, res) {
     var u = new User()
     u.isLogin(req, res, function (result) {
         if (result === "yes") {
-            res.send("yes")
+            var user=req.session.user
+            res.send(user)
         } else {
-            res.send("no")
+            res.send("")
         }
     })
 })
@@ -43,6 +44,30 @@ router.get('/zone', function (req, res) {
     })
 })
 
+//判断是否为一个人的好友
+router.get('/other/:id',function (req,res) {
+    var fru_id=req.params.id
+
+    new User().isLogin(req,res,function (result) {
+        if (result === "yes") {
+            new User().isFriendWith(req.session.user.id,fru_id,function (r) {
+                if(r==="yes"){   //和对方是好友
+                    new LoveRecord().retrieveFriendsRecordsByUid(fru_id,function (results) {
+                        res.render('otherzone',{data:results})
+                    })
+                }else {
+                    new LoveRecord().retrieveUnFriendsRecordsByUid(fru_id,function (results) {
+                        res.render('otherzone',{data:results})
+                    })
+                }
+            })
+        }else {
+            new LoveRecord().retrieveUnFriendsRecordsByUid(fru_id,function (results) {
+                res.render('otherzone',{data:results})
+            })
+        }
+    })
+})
 /* 用户增删改查 */
 router.post('/retrieveUser', function (req, res) {
     var username = req.body.username

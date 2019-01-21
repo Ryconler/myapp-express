@@ -5,10 +5,12 @@
     <title>首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <meta name="referrer" content="no-referrer"/>
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/common.css">
     <link rel="stylesheet" href="/stylesheets/appindex.css"/>
-    <link rel="stylesheet" href="/stylesheets/appindex_m.css" media="screen and (max-width:768px)"/>
     <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
+    <script src="/javascripts/common.js"></script>
     <script src="/javascripts/appindex.js"></script>
 </head>
 <body>
@@ -58,7 +60,25 @@
                 </div>
             </li>
         </ul>
-        <div class="my"><a href="/user/zone"></a></div>
+        <a class="login" href="#" id="login">登录</a>
+        <div class="my">
+            <div class="avatar">
+                <div class="wrap"></div>
+            </div>
+            <div class="dropdown">
+                <div class="profile">
+                    <h1>朱星杰朱星杰朱星杰朱星杰朱星杰</h1>
+                    <p>
+                        <a href=""><span>关注</span>&nbsp;<span>18</span></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href=""><span>粉丝</span>&nbsp;<span>18</span></a>
+                    </p>
+                </div>
+                <a href="/user/zone" target="_blank">我的空间</a>
+                <a href="#">消息列表</a>
+                <a href="#" id="quit">退出</a>
+            </div>
+        </div>
     </div>
 </header>
 <main>

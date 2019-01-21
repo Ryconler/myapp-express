@@ -36,6 +36,16 @@ router.get('/mypet', function (req, res) {
     })
 
 })
+router.get('/:id', function (req, res) {
+    var id=req.params.id
+    new Pet().getPet(id, function (result) {
+        if (result.length !== 0) {
+            res.send(result[0])
+        } else {
+            res.send("error")
+        }
+    })
+})
 //更改宠物名字
 router.post('/updatePetName',function (req,res) {
     new User().isLogin(req,res,function (result) {

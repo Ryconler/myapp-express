@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LoveStory</title>
+    <title>我的空间</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/stylesheets/normalize.css">
-    <link rel="stylesheet" href="/stylesheets/common.css">
-    <link type="text/css" rel="stylesheet" href="/stylesheets/loverecords.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/common.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/zone.css">
     <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
     <script src="/javascripts/common.js"></script>
-    <script src="/javascripts/loverecords.js"></script>
+    <script src="/javascripts/otherzone.js"></script>
+
 </head>
 <body>
 <!--移动端-->
@@ -36,22 +36,6 @@
     </ul>
 </div>
 
-<div class="alert_input">
-    <div class="input_wrap">
-        <textarea></textarea>
-        <div class="selects clear-float">
-            <select id="authority">
-                <option value="all">全部可见</option>
-                <option value="friend">互关好友可见</option>
-                <option value="me">仅自己可见</option>
-            </select>
-        </div>
-        <div class="buttons clear-float">
-            <button class="cancel">取消</button>
-            <button class="submit">确定</button>
-        </div>
-    </div>
-</div>
 <header>
     <div class="header_wrap">
         <div class="logo"><a href="/"></a></div>
@@ -83,7 +67,7 @@
             </div>
             <div class="dropdown">
                 <div class="profile">
-                    <h1></h1>
+                    <h1>朱星杰朱星杰朱星杰朱星杰朱星杰</h1>
                     <p>
                         <a href=""><span>关注</span>&nbsp;<span>18</span></a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -99,36 +83,30 @@
 </header>
 <main>
     <div class="main_wrap">
-        <div class="content">
+        <div class="module_title publish"><p>他的发布</p></div>
+        <div class="publish_content">
             <% data.forEach(function(item){%>
             <div class="content_item">
-                <div class="extra">
-                    <span></span>
-                    <a href="/user/other/<%=item.U_ID %>" style="border: 1px solid #f69494;color:#f69494">
-                        <%=item.U_USERNAME %>
-                    </a>&nbsp;&nbsp;发布于<em><%=item.LR_PUBLISH_DATE %></em>
-                </div>
-                <p><span></span><%=item.LR_CONTENT %></p>
-                <div class="date"><em><%=item.LR_YEAR %>年<%=item.LR_MONTH %>月<%=item.LR_DAY %>日</em></div>
+                <p id="<%=item.LR_ID %>"><span></span><%=item.LR_CONTENT %></p>
+                <div class="date"><em><%=item.LR_PUBLISH_DATE %></em></div>
             </div>
             <% }) %>
             <script>
                 $(function () {
-                    $(".content_item").each(function (index) {
+                    $(".publish_content .content_item span").each(function (index) {
                         var r = Math.floor(Math.random() * 256);
                         var g = Math.floor(Math.random() * 256);
                         var b = Math.floor(Math.random() * 256);
                         var rgb = '(' + r + ',' + g + ',' + b + ')';
-                        $(this).eq(1).find("span").css({background: "rgb" + rgb});
-                        $(this).eq(0).find("span").css({background: "rgb" + rgb})
+                        $(this).css({background: "rgb" + rgb})
                     })
                 })
             </script>
         </div>
-        <div class="write">
-            我也要写
+        <div class="module_title pet"><p>他的宠物<a href="/petexplanation.html" target="_blank">说明</a></p></div>
+        <div class="pet_content">
+            <iframe  src="/otherpet.html" width="100%" height="100%" frameborder="0"></iframe>
         </div>
-
     </div>
 </main>
 

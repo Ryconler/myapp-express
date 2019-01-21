@@ -143,6 +143,8 @@ $(function () {
     })
     //战斗
     function battle(mhp, mpower, mspeed, mtalent, ehp, epower, espeed, etalent) {
+        mspeed+=0.0001  //防止除0
+        espeed+=0.0001
         var current_mhp = mhp  //我的当前血量
         var current_ehp = ehp  //敌人当前血量
         //我的攻击
