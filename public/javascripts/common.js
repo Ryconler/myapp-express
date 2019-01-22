@@ -16,6 +16,14 @@ $(function () {
             $('.header_wrap .my').hide()
         }
     })
+    /* 点击头像 */
+    $(".header_wrap .avatar").click(function (e) {
+        e.stopPropagation()
+        $(".header_wrap .my .dropdown").stop().fadeToggle()
+    })
+    $(document).click(function () {
+        $(".header_wrap .my .dropdown").stop().fadeOut()
+    })
     /* 退出 */
     $("#quit").click(function () {
         $.get("/user/logout",function (res) {

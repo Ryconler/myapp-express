@@ -139,15 +139,7 @@ header {
 .header_wrap .avatar:hover {
     cursor: pointer;
 }
-.header_wrap .my:hover .dropdown{
-    display: block;
-    -webkit-animation: fadeIn 0.3s 1;
-    -o-animation: fadeIn 0.3s 1;
-    animation: fadeIn 0.3s 1;
-    /*animation-name: fadeIn; !*动画名称*!*/
-    /*animation-duration: 0.3s; !*动画持续时间*!*/
-    /*animation-iteration-count: 1; !*动画次数*!*/
-}
+
 .header_wrap .my:hover .dropdown>a:hover{
     color: #020222;
     background: #f6d8bf;
