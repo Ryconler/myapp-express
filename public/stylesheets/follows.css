@@ -1,0 +1,38 @@
+.following{
+    background: #f6d8bf;
+}
+.following-item{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #020222;
+    padding:0 15px;
+    border: 2px groove #f69494;
+}
+.following-item:hover{
+    background: rgba(0,0,0,0.1);
+}
+.main_wrap h3{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #f0f0f0;
+}
+
+@media screen and (max-width:768px ){
+    .following-item{
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 0.8rem;
+        padding:0 0.8rem;
+        border: 2px groove #f69494;
+    }
+    .main_wrap h3{
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

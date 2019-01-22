@@ -2,27 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>他的空间</title>
+    <title>我的好友</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
     <link type="text/css" rel="stylesheet" href="/stylesheets/common.css">
-    <link type="text/css" rel="stylesheet" href="/stylesheets/zone.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/follows.css">
     <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/calcfontsize.js"></script>
     <script src="/javascripts/common.js"></script>
-    <script src="/javascripts/otherzone.js"></script>
-    <style>
-        .follow{
-            margin: 0.7rem 0;
-            text-align: center;
-        }
-        .follow button{
-            width: 80%;
-            height: 2rem;
-            font-size: 0.8rem;
-            background: #f6d8bf;
-            color: #020222;
-        }
-    </style>
+    <!--<script src="/javascripts/followings.js"></script>-->
 </head>
 <body>
 <!--移动端-->
@@ -93,35 +80,17 @@
 </header>
 <main>
     <div class="main_wrap">
-        <div class="module_title publish"><p>他的发布</p></div>
-        <div class="publish_content">
-            <% data.forEach(function(item){%>
-            <div class="content_item">
-                <p id="<%=item.LR_ID %>"><span></span><%=item.LR_CONTENT %></p>
-                <div class="date"><em><%=item.LR_PUBLISH_DATE %></em></div>
-            </div>
+        <div class="following">
+            <% data.forEach(function(item){ %>
+            <% if(item.U_ID!==uid){ %>
+            <a href="/user/other/<%=item.U_ID %> " class="following-item" target="_blank">
+                <%=item.U_USERNAME %>
+            </a>
+            <% } %>
             <% }) %>
-            <script>
-                $(function () {
-                    $(".publish_content .content_item span").each(function (index) {
-                        var r = Math.floor(Math.random() * 256);
-                        var g = Math.floor(Math.random() * 256);
-                        var b = Math.floor(Math.random() * 256);
-                        var rgb = '(' + r + ',' + g + ',' + b + ')';
-                        $(this).css({background: "rgb" + rgb})
-                    })
-                })
-            </script>
         </div>
-        <div class="module_title pet"><p>他的宠物<a href="/petexplanation.html" target="_blank">说明</a></p></div>
-        <div class="pet_content">
-            <iframe  src="/otherpet.html" width="100%" height="100%" frameborder="0"></iframe>
-        </div>
-        <div class="follow">
-            <button>关注</button>
-        </div>
+        <h3>这里的人是和你互相关注的哦~</h3>
     </div>
 </main>
-
 </body>
 </html>

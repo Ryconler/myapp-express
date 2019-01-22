@@ -2,8 +2,16 @@ $(function () {
     /* 判断有没有登录 */
     $.get('/user/isLogin',function (res) {
         if(res){
+            $(".header_wrap .my").show()
             $('.header_wrap .login').hide()
             $(".header_wrap .dropdown .profile h1").text(res.username)
+            //获取粉丝和关注信息
+            $.get("/user/getMyFollowNum",function (res) {
+                if(res){
+                    $("#followingNum").text(res[0])
+                    $("#followerNum").text(res[1])
+                }
+            })
         }else {
             $('.header_wrap .my').hide()
         }
@@ -11,7 +19,7 @@ $(function () {
     /* 退出 */
     $("#quit").click(function () {
         $.get("/user/logout",function (res) {
-            location.reload()
+            $("body").load("/user/login")
         })
     })
     /* 登录 */

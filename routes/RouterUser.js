@@ -18,7 +18,7 @@ router.get('/isLogin', function (req, res) {
     var u = new User()
     u.isLogin(req, res, function (result) {
         if (result === "yes") {
-            var user=req.session.user
+            var user = req.session.user
             res.send(user)
         } else {
             res.send("")
@@ -43,31 +43,149 @@ router.get('/zone', function (req, res) {
         }
     })
 })
-
-//判断是否为一个人的好友
-router.get('/other/:id',function (req,res) {
-    var fru_id=req.params.id
-
-    new User().isLogin(req,res,function (result) {
+//访问他人空间
+router.get('/other/:id', function (req, res) {
+    var fru_id = parseInt(req.params.id)
+    new User().isLogin(req, res, function (result) {
         if (result === "yes") {
-            new User().isFriendWith(req.session.user.id,fru_id,function (r) {
-                if(r==="yes"){   //和对方是好友
-                    new LoveRecord().retrieveFriendsRecordsByUid(fru_id,function (results) {
-                        res.render('otherzone',{data:results})
-                    })
-                }else {
-                    new LoveRecord().retrieveUnFriendsRecordsByUid(fru_id,function (results) {
-                        res.render('otherzone',{data:results})
-                    })
-                }
-            })
-        }else {
-            new LoveRecord().retrieveUnFriendsRecordsByUid(fru_id,function (results) {
-                res.render('otherzone',{data:results})
+            //判断是否是自己的空间
+            if (fru_id === req.session.user.id) {
+                res.redirect("/user/zone")
+            } else {
+                //判断是否为对方好友
+                new User().isFriendWith(req.session.user.id, fru_id, function (r) {
+                    if (r === "yes") {   //和对方是好友
+                        new LoveRecord().retrieveFriendsRecordsByUid(fru_id, function (results) {
+                            res.render('otherzone', {data: results})
+                        })
+                    } else {
+                        new LoveRecord().retrieveUnFriendsRecordsByUid(fru_id, function (results) {
+                            res.render('otherzone', {data: results})
+                        })
+                    }
+                })
+            }
+        } else {
+            new LoveRecord().retrieveUnFriendsRecordsByUid(fru_id, function (results) {
+                res.render('otherzone', {data: results})
             })
         }
     })
 })
+//判断我是否关注了某人
+router.get('/isFollow/:id', function (req, res) {
+    var following_id = parseFloat(req.params.id)
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            //获取我所有的关注人id
+            new User().retrieveFollowing(req.session.user.id, function (results) {
+                if (results.length !== 0) {
+                    var isFollow = false
+                    for (var i = 0; i < results.length; i++) {
+                        if (following_id === results[i].FOLLOWING_ID) {
+                            isFollow = true
+                            break
+                        }
+                    }
+                    res.send(isFollow ? "yes" : "no")
+                } else {
+                    res.send("no")
+                }
+            })
+        } else {
+            res.send("noLogin")
+        }
+    })
+})
+//关注某人
+router.get('/follow/:id', function (req, res) {
+    var following_id = parseFloat(req.params.id)
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            var me_id = req.session.user.id
+            new User().follow(following_id, me_id, function (result) {
+                res.send((result === "success") ? "success" : "error")
+            })
+            //获取对方所有的关注人id,如果有我，则建立friend
+            new User().retrieveFollowing(following_id, function (results) {
+                if (results.length !== 0) {
+                    for (var i = 0; i < results.length; i++) {
+                        if (me_id === results[i].FOLLOWING_ID) {
+                            new User().createFriend(me_id, following_id)
+                            break
+                        }
+                    }
+                }
+            })
+        } else {
+            res.send("noLogin")
+        }
+    })
+})
+//取关某人
+router.get('/unfollow/:id', function (req, res) {
+    var following_id = parseFloat(req.params.id)
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            new User().unfollow(following_id, req.session.user.id, function (result) {
+                res.send((result === "success") ? "success" : "error")
+            })
+            //有好友则删除好友
+            new User().deleteFriend(following_id, req.session.user.id)
+        } else {
+            res.send("noLogin")
+        }
+    })
+})
+//获取我的关注和粉丝数量
+router.get('/getMyFollowNum', function (req, res) {
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            new User().getFollowNum(req.session.user.id,function (result) {
+                res.send(result)
+            })
+        } else {
+            res.redirect("/user/login")
+        }
+    })
+})
+//访问我的关注列表
+router.get('/myfollowings',function (req,res) {
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            new User().getFollowings(req.session.user.id,function (results) {
+                res.render('followings',{data:results})
+            })
+        } else {
+            res.redirect("/user/login")
+        }
+    })
+})
+//访问我的粉丝列表
+router.get('/myfollowers',function (req,res) {
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            new User().getFollowers(req.session.user.id,function (results) {
+                res.render('followers',{data:results})
+            })
+        } else {
+            res.redirect("/user/login")
+        }
+    })
+})
+//访问我的好友列表
+router.get('/myfriends',function (req,res) {
+    new User().isLogin(req, res, function (result) {
+        if (result === "yes") {
+            new User().getFriends(req.session.user.id,function (results) {
+                res.render('friends',{data:results,uid:req.session.user.id})
+            })
+        } else {
+            res.redirect("/user/login")
+        }
+    })
+})
+
 /* 用户增删改查 */
 router.post('/retrieveUser', function (req, res) {
     var username = req.body.username
@@ -77,8 +195,16 @@ router.post('/retrieveUser', function (req, res) {
         // console.log(result)
         if (result.length !== 0) {
             if (result[0].U_PASSWORD === password) {
-                req.session.user = {username: result[0].U_USERNAME, id: result[0].U_ID, password: result[0].U_PASSWORD}
-                res.cookie("user", {username: result[0].U_USERNAME, id: result[0].U_ID, password: result[0].U_PASSWORD})
+                req.session.user = {
+                    username: result[0].U_USERNAME,
+                    id: result[0].U_ID,
+                    password: result[0].U_PASSWORD
+                }
+                res.cookie("user", {
+                    username: result[0].U_USERNAME,
+                    id: result[0].U_ID,
+                    password: result[0].U_PASSWORD
+                })
                 // console.log(req.cookies)
                 res.send("success")
             } else {
