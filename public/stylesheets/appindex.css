@@ -16,7 +16,7 @@
 .banner .imgs {
     position: absolute;
     width: 10000px;
-    left: 0px;
+    left: 0;
 }
 
 .banner .imgs li {
@@ -61,7 +61,6 @@
     line-height: 300px;
     font-size: 30px;
     cursor: pointer;
-    font-family: "宋体";
 }
 
 .banner:hover .button {
