@@ -1,3 +1,11 @@
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?0e5cabcbcb81a4301472c3cfbcff8cbf";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
 $(function () {
     /* 判断有没有登录 */
     $.get('/user/isLogin',function (res) {
