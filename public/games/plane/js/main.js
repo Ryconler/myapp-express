@@ -1,5 +1,5 @@
 $(function () {
-    var socket = io('http://111.231.200.245:4000');
+    var socket = io('http://111.231.200.245:3001');
 
     //获取敌机的坐标
     socket.on("ePos", pos => {
