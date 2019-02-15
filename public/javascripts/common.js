@@ -1,5 +1,5 @@
 var _wa= _wa || [ ];
-_wa.push(['_setAccount', '6qwm7ac12y'])
+_wa.push(['_setAccount', '6qwm7ac12y']);
 (function() {
     var newScript = document.createElement('script');
     newScript.async = true;
