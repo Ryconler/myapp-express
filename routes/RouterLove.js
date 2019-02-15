@@ -5,7 +5,6 @@ var User = require('./DaoUser')
 var router = express.Router();
 
 router.get('/records', function (req, res) {
-
     new User().isLogin(req, res, function (result) {
         if (result === "yes") {
             new LoveRecord().retrieveFriendsRecords(req.session.user.id, function (results) {
@@ -23,7 +22,6 @@ router.get('/records', function (req, res) {
     })
 
 })
-
 router.post('/createRecord', function (req, res) {
     new User().isLogin(req, res, function (result) {
         if (result === "yes") {
