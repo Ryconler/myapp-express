@@ -1,11 +1,9 @@
-var _wa= _wa || [ ];
-_wa.push(['_setAccount', '6qwm7ac12y']);
+var _hmt = _hmt || [];
 (function() {
-    var newScript = document.createElement('script');
-    newScript.async = true;
-    newScript.src = 'http://analytics.server.jessezhu.cn/resources/javascripts/wa.js';
-    var firstScript = document.getElementsByTagName('script')[0];
-    firstScript.parentNode.insertBefore(newScript, firstScript);
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?118818222f8606822ab751de2a44b521";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
 })();
 $(function () {
     /* 判断有没有登录 */
