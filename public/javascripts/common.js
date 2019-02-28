@@ -5,6 +5,9 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
 })();
+
+
+
 $(function () {
     /* 判断有没有登录 */
     $.get('/user/isLogin',function (res) {
