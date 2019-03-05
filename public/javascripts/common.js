@@ -5,7 +5,15 @@ var _hmt = _hmt || [];
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
 })();
-
+var _wa= _wa || [ ];
+_wa.push(['track', '3g2gkttum1']);
+(function() {
+  var newScript = document.createElement('script');
+  newScript.async = true;
+  newScript.src = 'http://localhost:4000/resources/javascripts/wa.js';
+  var firstScript = document.getElementsByTagName('script')[0];
+  firstScript.parentNode.insertBefore(newScript, firstScript);
+})();
 
 
 $(function () {
