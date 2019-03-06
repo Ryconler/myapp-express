@@ -8,15 +8,11 @@ router.get('/records', function (req, res) {
     new User().isLogin(req, res, function (result) {
         if (result === "yes") {
             new LoveRecord().retrieveFriendsRecords(req.session.user.id, function (results) {
-                if (results.length !== 0) {
-                    res.render('loverecords', {data: results})
-                }
+                res.render('loverecords', {data: results})
             })
         } else {
             new LoveRecord().retrieveRecords(function (results) {
-                if (results.length !== 0) {
-                    res.render('loverecords', {data: results})
-                }
+                res.render('loverecords', {data: results})
             })
         }
     })

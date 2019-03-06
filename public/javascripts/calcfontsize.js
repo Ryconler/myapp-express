@@ -5,7 +5,6 @@ function calc() {
 
     html.style.fontSize = 20 * (width / 384) + "px"
 
-
     // console.log(html.style.fontSize)
 }
 

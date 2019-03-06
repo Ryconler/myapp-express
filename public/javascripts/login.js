@@ -36,7 +36,9 @@ $(function () {
             $.post("/user/retrieveUser", {username: username, password: password}, function (res) {
                 if (res === "success") {
                     $(".login-info p:last-child").text("登录成功")
-                    location.reload()
+                    setTimeout(function () {
+                        location.reload()
+                    },500)
                 } else if (res === "error") {
                     $(".login-info p:last-child").text("密码错误")
                 } else if (res === "empty") {
@@ -46,7 +48,7 @@ $(function () {
                             $(".login-info p:last-child").text("创建成功，正在为您跳转...")
                             setTimeout(function () {
                                 location.reload()
-                            },1000)
+                            },500)
                         }else if(res==="forbid"){
                             $(".login-info p:last-child").text("目前禁止新用户注册，请联系管理员。")
                         }else {
