@@ -1,10 +1,10 @@
 var _hmt = _hmt || [];
-// (function() {
-//     var hm = document.createElement("script");
-//     hm.src = "https://hm.baidu.com/hm.js?118818222f8606822ab751de2a44b521";
-//     var s = document.getElementsByTagName("script")[0];
-//     s.parentNode.insertBefore(hm, s);
-// })();
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?118818222f8606822ab751de2a44b521";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})()
 // var _wa= _wa || [ ];
 // _wa.push(['track', '3g2gkttum1']);
 // (function() {
