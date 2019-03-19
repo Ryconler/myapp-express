@@ -9,7 +9,7 @@ function DaoLoveRecord() {
         connection.query(`SELECT user.U_ID,U_USERNAME,LR_CONTENT,LR_CONTENT,LR_YEAR,LR_MONTH,LR_DAY,LR_PUBLISH_DATE
             FROM user JOIN love_record ON user.U_ID=love_record.U_ID
             WHERE LR_AUTHORITY IN("all")
-            ORDER BY LR_PUBLISH_DATE DESC `, function (err, results) {
+            ORDER BY LR_PUBLISH_DATE DESC LIMIT 10`, function (err, results) {
             if (err) {
                 console.log('[SELECT ERROR] - ', err.message);
                 return
@@ -25,7 +25,7 @@ function DaoLoveRecord() {
             FROM user JOIN love_record ON user.U_ID=love_record.U_ID
             WHERE LR_AUTHORITY IN("all") OR (love_record.U_ID IN
             (SELECT FRU_ID FROM friend WHERE U_ID=?) AND LR_AUTHORITY IN("friend"))
-            ORDER BY LR_PUBLISH_DATE DESC`,[u_id], function (err, results) {
+            ORDER BY LR_PUBLISH_DATE DESC LIMIT 10`,[u_id], function (err, results) {
             if (err) {
                 console.log('[SELECT ERROR] - ', err.message);
                 return

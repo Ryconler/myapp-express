@@ -141,6 +141,24 @@ main{
     font-size: 18px;
 }
 
+.tips{
+    position: fixed;
+    padding: 5px;
+    right: 0;
+    top: 50%;
+    width: 100px;
+    background: #fff;
+    font-size: 16px;
+}
+.tips p:last-child{
+    margin-top: 5px;
+    background: #f69494;
+    text-align: center;
+    line-height: 25px;
+}
+.tips p:last-child:hover{
+    cursor: pointer;
+}
 
 @media screen and (max-width:768px ){
     main{

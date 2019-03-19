@@ -67,4 +67,13 @@ $(function () {
         })
     })
 
+
+    if(localStorage.getItem('know-tip1')==='yes'){
+        $('.tips').hide()
+    }
+    $('.tips p:last-child').click(function () {
+        localStorage.setItem('know-tip1','yes')
+        $('.tips').hide()
+    })
+
 })

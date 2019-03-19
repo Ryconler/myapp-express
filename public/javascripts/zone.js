@@ -155,4 +155,11 @@ $(function () {
         }else {}
     })
 
+    if(localStorage.getItem('know-tip2')==='yes'){
+        $('.tips').hide()
+    }
+    $('.tips p:last-child').click(function () {
+        localStorage.setItem('know-tip2','yes')
+        $('.tips').hide()
+    })
 })
