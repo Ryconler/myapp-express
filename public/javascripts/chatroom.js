@@ -1,6 +1,6 @@
 $(function () {
 
-    var socket = io.connect('http://111.231.200.245:3000');
+    var socket = io.connect('http://practice.jessezhu.cn');
     // var socket = io.connect('http://localhost:3000');
 
     //按钮发送数据
