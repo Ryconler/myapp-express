@@ -3,7 +3,7 @@ function handleError () {
     var conn = mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: 'ntu2015',
+        password: 'root',
         database: 'myapp',
         port: 3306,
         // useConnectionPooling: true
